@@ -13,3 +13,14 @@ Zhaozhi Wang<sup>1</sup>,
 [Qixiang Ye](https://scholar.google.com/citations?user=gFtI-8QAAAAJ&hl=en&oi=ao)<sup>1,3</sup>,
 
 <sup>1</sup> [University of Chinese Academy of Sciences], <sup>2</sup> [Huawei Inc.](https://mmlab.ie.cuhk.edu.hk/), <sup>3</sup> [Pengcheng Lab.](https://www.sensetime.com/cn).
+  
+This repo is the official implementation of [Integrally Pre-Trained Transformer Pyramid Networks](https://arxiv.org/abs/22xx.xxx). 
+
+  
+</div>
+  
+  
+> **ImageNet Pretrain**: See [PRETRAIN.md](PRETRAIN.md).\
+> **ImageNet Finetune**: See [FINETUNE.md](FINETUNE.md).\
+> **Object Detection**: See [DETECTION.md](DET/DETECTION.md).\
+> **Semantic Segmentation**: See [SEGMENTATION.md](SEG/SEGMENTATION.md). \
