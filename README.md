@@ -54,8 +54,8 @@ iTPN supports pre-training using pixel and CLIP as supervision. For the latter, 
 | HiViT | HiViT-B | RGB |  1600 | 66 | 84.6 |
 | MVP | ViT-B | CLIP-B |  300 | 86 | 84.4 |
 | BEiT-v2 | ViT-B | CLIP-B |  1600 | 86 | 85.5 |
-| iTPN-B | HiViT-B | RGB | 1600 | 79 | 85.5 |
-| iTPN-B | HiViT-B | CLIP-B | 800 | 79 | 86.2 |
+| iTPN | HiViT-B | RGB | 1600 | 79 | 85.5 |
+| iTPN | HiViT-B | CLIP-B | 800 | 79 | 86.2 |
 | --- | --- | --- | --- | --- | --- |
 | iTPN-L | HiViT-L/16 | CLIP-B | 300 | 288 | 87.0 |
 | iTPN-L | HiViT-L/16 | CLIP-L | 800 | 288 | 87.8 |
@@ -76,3 +76,5 @@ iTPN is released under the [MIT License](https://github.com/sunsmarterjie/iTPN/b
   year={2022}
 }
 ```
+
+
