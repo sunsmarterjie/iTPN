@@ -24,3 +24,21 @@ This repo is the official implementation of [Integrally Pre-Trained Transformer 
 > **ImageNet Finetune**: See [FINETUNE.md](FINETUNE.md).\
 > **Object Detection**: See [DETECTION.md](DET/DETECTION.md).\
 > **Semantic Segmentation**: See [SEGMENTATION.md](SEG/SEGMENTATION.md). \
+
+
+
+
+
+
+
+
+## Citation
+
+```bash
+@article{tian2022integrally,
+  title={Integrally Pre-Trained Transformer Pyramid Networks},
+  author={Yunjie, Tian and Lingxi, Xie and Zhaozhi, Wang and Longhui, Wei and Xiaopeng, Zhang and Jianbin, Jiao and Yaowei, Wang and Qi, Tian and Qixiang, Ye},
+  journal={arXiv preprint arXiv:22xx.xxxxx},
+  year={2022}
+}
+```
