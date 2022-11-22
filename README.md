@@ -2,9 +2,9 @@
 <h1>iTPN</h1>
 <h3>Integrally Pre-Trained Transformer Pyramid Networks</h3>
 
-[Yunjie Tian]<sup>1</sup>,
+Yunjie Tian<sup>1</sup>,
 [Lingxi Xie](https://scholar.google.com/citations?user=arny77IAAAAJ&hl=en&oi=ao)<sup>1</sup>, 
-[Zhaozhi Wang]<sup>1</sup>, 
+Zhaozhi Wang<sup>1</sup>, 
 [Longhui Wei](https://scholar.google.com/citations?user=SH_-B_AAAAAJ&hl=en&oi=ao)<sup>2</sup>,
 [Xiaopeng Zhang](https://scholar.google.com/citations?user=gFtI-8QAAAAJ&hl=en&oi=ao)<sup>2</sup>,
 [Jianbin Jiao](https://scholar.google.com/citations?user=gFtI-8QAAAAJ&hl=en&oi=ao)<sup>1</sup>,
