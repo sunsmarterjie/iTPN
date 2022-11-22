@@ -25,7 +25,13 @@ This repo is the official implementation of [Integrally Pre-Trained Transformer 
 > **Object Detection**: See [DETECTION.md](DET/DETECTION.md).\
 > **Semantic Segmentation**: See [SEGMENTATION.md](SEG/SEGMENTATION.md). \
 
-
+## Getting Started
+### requiments
+* Ubuntu
+* Python 3.7+
+* CUDA 10.2+
+* GCC 5+
+* Pytorch 1.7+
 
 
 
