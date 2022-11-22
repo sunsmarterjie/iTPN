@@ -30,7 +30,8 @@ This repo is the official implementation of [Integrally Pre-Trained Transformer 
 
 
 
-
+## License
+iTPN is released under the [MIT License](https://github.com/sunsmarterjie/iTPN/blob/main/LICENSE).
 
 ## Citation
 
