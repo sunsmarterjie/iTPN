@@ -46,7 +46,6 @@ iTPN supports pre-training using pixel and CLIP as supervision. For latter, plea
 ## Fine-Tuning Results on ImageNet-1K
 | Methods | Arch. | Sup. | epochs | Param. (M) | FT acc@1(%) |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-|at base-level|
 | BEiT | ViT-B | DALLE | 800 | 86 | 83.0 |
 | MAE | ViT-B | RGB | 1600 | 86 | 83.6 |
 | SimMIM | Swin-B | RGB | 800 | 88 | 84.0 | 
@@ -57,7 +56,7 @@ iTPN supports pre-training using pixel and CLIP as supervision. For latter, plea
 | BEiT-v2 | ViT-B | CLIP-B |  1600 | 86 | 85.5 |
 | iTPN-B | HiViT-B | RGB | 1600 | 79 | 85.5 |
 | iTPN-B | HiViT-B | CLIP-B | 800 | 79 | 86.2 |
-|at large-level|
+| :---: | :---: | :---: | :---: | :---: | :---: |
 | iTPN-L | HiViT-L/16 | CLIP-B | 300 | 288 | 87.0 |
 | iTPN-L | HiViT-L/16 | CLIP-L | 800 | 288 | 87.8 |
 | iTPN-L | HiViT-L/14 | CLIP-L | 300 | 288 | 88.0 |
