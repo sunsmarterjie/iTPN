@@ -26,7 +26,7 @@ This repo is the official implementation of [Integrally Pre-Trained Transformer 
 > **Semantic Segmentation**: See [SEGMENTATION.md](SEG/SEGMENTATION.md). \
 
 
-## Getting Started
+### Getting Started
 ## requiments
 * Ubuntu
 * Python 3.7+
@@ -41,7 +41,7 @@ This repo is the official implementation of [Integrally Pre-Trained Transformer 
 iTPN supports pre-training using pixel and CLIP as supervision. For the latter, please first download the [CLIP models](https://github.com/openai/CLIP/blob/main/clip/clip.py)(We use [CLIP-B/16](https://openaipublic.azureedge.net/clip/models/5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f/ViT-B-16.pt) and [CLIP-L/14](https://openaipublic.azureedge.net/clip/models/b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836/ViT-L-14.pt) models in the paper). See details at [PRETRAIN.md](PRETRAIN.md).
 
 
-# Due to data privacy policy of Huawei Inc., the checkpoints are not availble temporarily. But we are applying for them and then release them recently.
+### Due to data privacy policy of Huawei Inc., the checkpoints are not availble temporarily. But we are applying for them and then release them recently.
 
 ## Fine-Tuning Results on ImageNet-1K
 | Methods | Arch. | Sup. | epochs | Param. (M) | FT acc@1(%) |
@@ -56,7 +56,7 @@ iTPN supports pre-training using pixel and CLIP as supervision. For the latter, 
 | BEiT-v2 | ViT-B | CLIP-B |  1600 | 86 | 85.5 |
 | iTPN-B | HiViT-B | RGB | 1600 | 79 | 85.5 |
 | iTPN-B | HiViT-B | CLIP-B | 800 | 79 | 86.2 |
-| :---: | :---: | :---: | :---: | :---: | :---: |
+| --- | --- | --- | --- | --- | --- |
 | iTPN-L | HiViT-L/16 | CLIP-B | 300 | 288 | 87.0 |
 | iTPN-L | HiViT-L/16 | CLIP-L | 800 | 288 | 87.8 |
 | iTPN-L | HiViT-L/14 | CLIP-L | 300 | 288 | 88.0 |
