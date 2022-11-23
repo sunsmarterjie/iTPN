@@ -18,7 +18,7 @@ This repo is the official implementation of [Integrally Pre-Trained Transformer 
 
   
 <p align="center">
-  <img src="figs/acc_comp.jpg" alt="iTPN" width="50%">
+  <img src="figs/acc_comp.jpg" alt="iTPN" width="60%">
 </p>
 <p align="center">
 Figure 1: On ImageNet-1K classification, iTPN shows significant advantages over prior methods, either only using pixel supervision (top) or leveraging knowledge from a pre-trained teacher (bottom, in the parentheses lies the name of teacher model)
