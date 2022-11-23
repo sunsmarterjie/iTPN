@@ -18,7 +18,7 @@ This repo is the official implementation of [Integrally Pre-Trained Transformer 
 
   
 <p align="center">
-  <img src="figs/acc_comp.jpg" alt="iTPN" width="60%">
+  <img src="figs/acc_comp.jpg" alt="iTPN" width="50%">
 </p>
 <p align="center">
 Figure 1: On ImageNet-1K classification, iTPN shows significant advantages over prior methods, either only using pixel supervision (top) or leveraging knowledge from a pre-trained teacher (bottom, in the parentheses lies the name of teacher model)
@@ -53,7 +53,7 @@ iTPN supports pre-training using pixel and CLIP as supervision. For the latter, 
 
 
 <p align="center">
-  <img src="figs/ft_in1k.jpg" alt="iTPN" width="60%">
+  <img src="figs/ft_in1k.jpg" alt="iTPN" width="40%">
 </p>
 <p align="center">
 Table 1: Top-1 classification accuracy (%) by fine-tuning the pre-trained models on ImageNet-1K. We compare models of different levels and supervisions (e.g., with and without CLIP) separately.
