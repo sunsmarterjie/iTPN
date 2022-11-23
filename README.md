@@ -31,7 +31,7 @@ Figure 1: On ImageNet-1K classification, iTPN shows significant advantages over 
   
   
 > **ImageNet Pre-training**: See [PRETRAIN.md](PRETRAIN.md).\
-> **ImageNet Fine-tuneing**: See [FINETUNE.md](FINETUNE.md).\
+> **ImageNet Fine-tuning**: See [FINETUNE.md](FINETUNE.md).\
 > **Object Detection**: See [DETECTION.md](DET/DETECTION.md).\
 > **Semantic Segmentation**: See [SEGMENTATION.md](SEG/SEGMENTATION.md).
 
