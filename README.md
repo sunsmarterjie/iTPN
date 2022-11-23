@@ -17,6 +17,14 @@ Zhaozhi Wang<sup>1</sup>,
 This repo is the official implementation of [Integrally Pre-Trained Transformer Pyramid Networks](https://arxiv.org/abs/22xx.xxx). 
 
   
+<p align="left">
+  <img src="figs/acc_comp.jpg" alt="iTPN" width="48%">
+</p>
+<p align="center">
+Figure 1: On ImageNet-1K classification, iTPN shows significant advantages over prior methods, either only using pixel supervision (top) or leveraging knowledge from a pre-trained teacher (bottom, in the parentheses lies the name of teacher model)
+</p>
+
+  
 </div>
   
   
@@ -62,18 +70,20 @@ iTPN supports pre-training using pixel and CLIP as supervision. For the latter, 
 | iTPN-L | HiViT-L/14 | CLIP-L | 300 | 288 | 88.0 |
 
 
+
 <p align="left">
-  <img src="figs/acc_comp.jpg" alt="iTPN" width="48%">
+  <img src="figs/ft_in1k.jpg" alt="iTPN" width="48%">
 </p>
 <p align="center">
-Figure 1: Pipeline of DA2S
+Table 1: Top-1 classification accuracy (%) by fine-tuning the pre-trained models on ImageNet-1K. We compare models of different levels and supervisions (e.g., with and without CLIP) separately.
 </p>
 
-![tenser](figs/acc_comp.jpg)
-
-![tenser](figs/ft_in1k.jpg)
-
-![tenser](figs/ft_coco_ade.jpg)
+<p align="left">
+  <img src="figs/ft_coco_ade.jpg" alt="iTPN" width="48%">
+</p>
+<p align="center">
+Table 2: Visual recognition results (%) on COCO and ADE20K. Mask R-CNN (abbr. MR, 1x/3x) and Cascade Mask R-CNN (abbr. CMR, 1x) are used on COCO, and UPerHead with 512x512 input is used on ADE20K. For the base-level models, each cell of COCO results contains object detection (box) and instance segmentation (mask) APs. For the large-level models, the accuracy of 1x Mask R-CNN surpasses all existing methods. 
+</p>
 
 
 
