@@ -16,6 +16,8 @@ Zhaozhi Wang<sup>1</sup>,
   
 This repo is the official implementation of [Integrally Pre-Trained Transformer Pyramid Networks](https://arxiv.org/abs/22xx.xxx). 
 
+# This repo is being organized, and please stay tuned.
+
   
 <p align="center">
   <img src="figs/acc_comp.jpg" alt="iTPN" width="60%">
