@@ -62,6 +62,13 @@ iTPN supports pre-training using pixel and CLIP as supervision. For the latter, 
 | iTPN-L | HiViT-L/14 | CLIP-L | 300 | 288 | 88.0 |
 
 
+![tenser](figs/acc_comp.png)
+
+![tenser](figs/ft_in1k.png)
+
+![tenser](figs/ft_coco_ade.png)
+
+
 
 ## License
 iTPN is released under the [MIT License](https://github.com/sunsmarterjie/iTPN/blob/main/LICENSE).
