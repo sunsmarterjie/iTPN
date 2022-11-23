@@ -401,14 +401,14 @@ class iTPN(nn.Module):
 
 
 def itpn_base(**kwargs):
-    model = HiRep_Fpn(
+    model = iTPN(
         embed_dim=512, mlp_depth=3, depth=24, num_heads=8, bridge_mlp_ratio=3., mlp_ratio=4.,
         rpe=True, num_outs=-1, norm_layer=partial(nn.LayerNorm, eps=1e-6), **kwargs)
     return model
 
 
 def itpn_large(**kwargs):
-    model = HiRep_Fpn(
+    model = iTPN(
         embed_dim=768, mlp_depth=2, depth=40, num_heads=12, bridge_mlp_ratio=3., mlp_ratio=4.,
         rpe=True, num_outs=-1, norm_layer=partial(nn.LayerNorm, eps=1e-6), **kwargs)
     return model
