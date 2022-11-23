@@ -17,8 +17,8 @@ Zhaozhi Wang<sup>1</sup>,
 This repo is the official implementation of [Integrally Pre-Trained Transformer Pyramid Networks](https://arxiv.org/abs/22xx.xxx). 
 
   
-<p align="left">
-  <img src="figs/acc_comp.jpg" alt="iTPN" width="48%">
+<p align="center">
+  <img src="figs/acc_comp.jpg" alt="iTPN" width="60%">
 </p>
 <p align="center">
 Figure 1: On ImageNet-1K classification, iTPN shows significant advantages over prior methods, either only using pixel supervision (top) or leveraging knowledge from a pre-trained teacher (bottom, in the parentheses lies the name of teacher model)
@@ -51,35 +51,16 @@ iTPN supports pre-training using pixel and CLIP as supervision. For the latter, 
 
 ### Due to data privacy policy of Huawei Inc., the checkpoints are not availble temporarily. But we are applying for them and then release them recently.
 
-## Fine-Tuning Results on ImageNet-1K
-| Methods | Arch. | Sup. | epochs | Param. (M) | FT acc@1(%) |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| BEiT | ViT-B | DALLE | 800 | 86 | 83.0 |
-| MAE | ViT-B | RGB | 1600 | 86 | 83.6 |
-| SimMIM | Swin-B | RGB | 800 | 88 | 84.0 | 
-| MaskFeat | ViT-B | HOG | 800 | 86 | 84.0 ||
-| data2vec | ViT-B | RGB | 800 | 86 | 84.2 |
-| HiViT | HiViT-B | RGB |  1600 | 66 | 84.6 |
-| MVP | ViT-B | CLIP-B |  300 | 86 | 84.4 |
-| BEiT-v2 | ViT-B | CLIP-B |  1600 | 86 | 85.5 |
-| iTPN | HiViT-B | RGB | 1600 | 79 | 85.5 |
-| iTPN | HiViT-B | CLIP-B | 800 | 79 | 86.2 |
-| --- | --- | --- | --- | --- | --- |
-| iTPN-L | HiViT-L/16 | CLIP-B | 300 | 288 | 87.0 |
-| iTPN-L | HiViT-L/16 | CLIP-L | 800 | 288 | 87.8 |
-| iTPN-L | HiViT-L/14 | CLIP-L | 300 | 288 | 88.0 |
 
-
-
-<p align="left">
-  <img src="figs/ft_in1k.jpg" alt="iTPN" width="48%">
+<p align="center">
+  <img src="figs/ft_in1k.jpg" alt="iTPN" width="60%">
 </p>
 <p align="center">
 Table 1: Top-1 classification accuracy (%) by fine-tuning the pre-trained models on ImageNet-1K. We compare models of different levels and supervisions (e.g., with and without CLIP) separately.
 </p>
 
-<p align="left">
-  <img src="figs/ft_coco_ade.jpg" alt="iTPN" width="48%">
+<p align="center">
+  <img src="figs/ft_coco_ade.jpg" alt="iTPN" width="70%">
 </p>
 <p align="center">
 Table 2: Visual recognition results (%) on COCO and ADE20K. Mask R-CNN (abbr. MR, 1x/3x) and Cascade Mask R-CNN (abbr. CMR, 1x) are used on COCO, and UPerHead with 512x512 input is used on ADE20K. For the base-level models, each cell of COCO results contains object detection (box) and instance segmentation (mask) APs. For the large-level models, the accuracy of 1x Mask R-CNN surpasses all existing methods. 
