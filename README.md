@@ -14,9 +14,9 @@ Zhaozhi Wang<sup>1</sup>,
 
 <sup>1</sup> [University of Chinese Academy of Sciences](https://www.ucas.ac.cn/), <sup>2</sup> [Huawei Inc.](https://www.huawei.com/cn/?utm_source=corp_bdpz&utm_campaign=regular&utm_medium=cpc), <sup>3</sup> [Pengcheng Lab.](https://www.pcl.ac.cn/).
   
-This repo is the official implementation of [Integrally Pre-Trained Transformer Pyramid Networks](https://arxiv.org/abs/22xx.xxx). 
+This repo is an implementation of [Integrally Pre-Trained Transformer Pyramid Networks](https://arxiv.org/abs/22xx.xxx). 
 
-### This repo is being organized, and please stay tuned.
+### This repo is being updated, and please stay tuned.
 
   
 <p align="center">
@@ -30,8 +30,8 @@ Figure 1: On ImageNet-1K classification, iTPN shows significant advantages over 
 </div>
   
   
-> **ImageNet Pretrain**: See [PRETRAIN.md](PRETRAIN.md).\
-> **ImageNet Finetune**: See [FINETUNE.md](FINETUNE.md).\
+> **ImageNet Pre-training**: See [PRETRAIN.md](PRETRAIN.md).\
+> **ImageNet Fine-tuneing**: See [FINETUNE.md](FINETUNE.md).\
 > **Object Detection**: See [DETECTION.md](DET/DETECTION.md).\
 > **Semantic Segmentation**: See [SEGMENTATION.md](SEG/SEGMENTATION.md).
 
