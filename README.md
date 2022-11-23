@@ -62,6 +62,13 @@ iTPN supports pre-training using pixel and CLIP as supervision. For the latter, 
 | iTPN-L | HiViT-L/14 | CLIP-L | 300 | 288 | 88.0 |
 
 
+<p align="left">
+  <img src="figs/acc_comp.jpg" alt="iTPN" width="48%">
+</p>
+<p align="center">
+Figure 1: Pipeline of DA2S
+</p>
+
 ![tenser](figs/acc_comp.jpg)
 
 ![tenser](figs/ft_in1k.jpg)
