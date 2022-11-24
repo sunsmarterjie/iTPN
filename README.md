@@ -14,7 +14,7 @@ Zhaozhi Wang<sup>1</sup>,
 
 <sup>1</sup> [University of Chinese Academy of Sciences](https://www.ucas.ac.cn/), <sup>2</sup> [Huawei Inc.](https://www.huawei.com/cn/?utm_source=corp_bdpz&utm_campaign=regular&utm_medium=cpc), <sup>3</sup> [Pengcheng Lab.](https://www.pcl.ac.cn/).
   
-This repo is an implementation of [Integrally Pre-Trained Transformer Pyramid Networks](https://arxiv.org/abs/22xx.xxx). 
+This repo is an implementation of [Integrally Pre-Trained Transformer Pyramid Networks](https://arxiv.org/pdf/2211.12735.pdf). 
 
 ### This repo is being updated, and please stay tuned.
 
@@ -79,7 +79,7 @@ iTPN is released under the [MIT License](https://github.com/sunsmarterjie/iTPN/b
 @article{tian2022integrally,
   title={Integrally Pre-Trained Transformer Pyramid Networks},
   author={Tian, Yunjie and Xie, Lingxi and Wang, Zhaozhi and Wei, Longhui and Zhang, Xiaopeng and Jiao, Jianbin and Wang, Yaowei and Tian, Qi and Ye, Qixiang},
-  journal={arXiv preprint arXiv:22xx.xxxxx},
+  journal={arXiv preprint arXiv:2211.12735},
   year={2022}
 }
 ```
