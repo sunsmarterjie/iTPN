@@ -5,6 +5,7 @@
 We will release the checkpoints [here](https://to_be_update).
 
 To fine-tune with **multi-node distributed training**, run the following on 4 nodes with 8 GPUs each.
+
 Script for iTPN-B:
 ```bash
 python startup_ft.py \
@@ -37,7 +38,9 @@ python startup_ft.py \
     --data_path ${IMAGENET_DIR}
 ```
 
-or you can run with 
+OR
+
+you can run with 
 Script for iTPN-B: 
 ```bash
 python -m torch.distributed.launch --nnodes 4 --nproc_per_node=8 main_finetune.py \
