@@ -82,6 +82,7 @@ iTPN is released under the [MIT License](https://github.com/sunsmarterjie/iTPN/b
 ## Citation
 
 ```bash
+
 @article{tian2022integrally,
   title={Integrally Pre-Trained Transformer Pyramid Networks},
   author={Tian, Yunjie and Xie, Lingxi and Wang, Zhaozhi and Wei, Longhui and Zhang, Xiaopeng and Jiao, Jianbin and Wang, Yaowei and Tian, Qi and Ye, Qixiang},
