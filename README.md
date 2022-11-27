@@ -36,6 +36,13 @@ Figure 1: On ImageNet-1K classification, iTPN shows significant advantages over 
 > **Semantic Segmentation**: See [SEGMENTATION.md](semantic_segmentation/README.md).
 
 
+## Updates
+
+***25/Nov./2022***
+
+The preprint version is public at [arxiv](https://arxiv.org/pdf/2211.12735.pdf).
+
+
 ### Getting Started
 ## requiments
 * Ubuntu
