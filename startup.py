@@ -9,6 +9,7 @@ parser.add_argument('--batch_size', type=int, default=64, help='batch size')
 parser.add_argument('--epochs', type=int, default=1600, help='total pretraing epochs')
 parser.add_argument('--warmup_epochs', type=int, default=40, help='warmup epochs')
 parser.add_argument('--model', type=str, default='itpn_base_dec512d8b', help='the path of the config file')
+parser.add_argument('--data_path', type=str, default='../imagenet', help='the path of the dataset')
 
 parser.add_argument('--mask_ratio', default=0.75, type=float, help='ratio of the visual tokens/patches need be masked')
 parser.add_argument('--blr', type=float, default=1.5e-4, metavar='LR',
@@ -23,7 +24,7 @@ args, unparsed = parser.parse_known_args()
 cmd_str = f"python -m torch.distributed.launch --nproc_per_node {args.num_gpus} \
     --nnodes={args.world_size} main_pretrain.py --batch_size {args.batch_size} --epochs {args.epochs} \
     --model {args.model} --warmup_epochs {args.warmup_epochs} --mask_ratio {args.mask_ratio} \
-    --blr {args.blr}"
+    --blr {args.blr} --data_path {args.data_path}"
 
 print('The running command is: ' + cmd_str)
 
