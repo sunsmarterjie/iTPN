@@ -41,6 +41,7 @@ python startup_ft.py \
 OR
 
 you can run with 
+
 Script for iTPN-B: 
 ```bash
 python -m torch.distributed.launch --nnodes 4 --nproc_per_node=8 main_finetune.py \
