@@ -15,6 +15,7 @@ python startup.py \
     --data_path ${IMAGENET_DIR}
 ```
 or 
+```
 python -m torch.distributed.launch --nnodes 8 --nproc_per_node=8 main_pretrain.py \
         --batch_size 64
         --model itpn_base_dec512d8b \
