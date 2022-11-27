@@ -5,7 +5,7 @@
 To pre-train iTPN-B (recommended default) with **multi-node distributed training**, run the following on 8 nodes with 8 GPUs each:
 ```bash
 python startup.py \
-    --nodes 8 \
+    --world_size 8 \
     --batch_size 64 \
     --model itpn_base_dec512d8b \
     --mask_ratio 0.75 \
