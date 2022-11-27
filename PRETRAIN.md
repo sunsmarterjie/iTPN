@@ -14,7 +14,8 @@ python startup.py \
     --blr 1.5e-4 --weight_decay 0.05 \
     --data_path ${IMAGENET_DIR}
 ```
-or 
+OR
+
 ```bash
 python -m torch.distributed.launch --nnodes 8 --nproc_per_node=8 main_pretrain.py \
         --batch_size 64
