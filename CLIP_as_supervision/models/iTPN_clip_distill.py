@@ -81,19 +81,12 @@ class BlockWithRPE(nn.Module):
         self.merge_att = merge_att
 
         with_attn = num_heads > 0.
-
-        if merge_att:
-            self.norm1 = norm_layer(dim * factor ** 2) if with_attn else None
-            self.attn = Attention(
-                input_size, dim * factor ** 2, num_heads=num_heads * factor ** 2, qkv_bias=qkv_bias, qk_scale=qk_scale,
-                attn_drop=attn_drop, proj_drop=drop, rpe=rpe,
-            ) if with_attn else None
-        else:
-            self.norm1 = norm_layer(dim) if with_attn else None
-            self.attn = Attention(
-                input_size, dim, num_heads=num_heads, qkv_bias=qkv_bias, qk_scale=qk_scale,
-                attn_drop=attn_drop, proj_drop=drop, rpe=rpe,
-            ) if with_attn else None
+        
+        self.norm1 = norm_layer(dim) if with_attn else None
+        self.attn = Attention(
+            input_size, dim, num_heads=num_heads, qkv_bias=qkv_bias, qk_scale=qk_scale,
+            attn_drop=attn_drop, proj_drop=drop, rpe=rpe,
+        ) if with_attn else None
 
         self.drop_path = DropPath(drop_path) if drop_path > 0. else nn.Identity()
         self.norm2 = norm_layer(dim)
