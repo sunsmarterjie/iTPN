@@ -3,6 +3,7 @@
 # Github source: https://github.com/microsoft/unilm/tree/master/beit
 # Copyright (c) 2021 Microsoft
 # Licensed under The MIT License [see LICENSE for details]
+# By Hangbo Bao
 # By Yunjie Tian
 # Based on timm and DeiT code bases
 # https://github.com/rwightman/pytorch-image-models/tree/master/timm
