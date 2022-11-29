@@ -10,7 +10,7 @@ parser.add_argument('--epochs', type=int, default=800, help='total pre-training 
 parser.add_argument('--warmup_epochs', type=int, default=10, help='the warmup epochs')
 parser.add_argument('--model', type=str, default='clip_tpn_base_3324_patch16_224',
                     help='the path of the config file')
-parser.add_argument('--clip_path', type=str, default='./ViT-B-16.pt', help='the path of the CLIP model')
+parser.add_argument('--clip_path', type=str, default='../ViT-B-16.pt', help='the path of the CLIP model')
 parser.add_argument('--input_size', default=224, type=int,
                     help='images input size for backbone')
 parser.add_argument('--second_input_size', default=224, type=int,
