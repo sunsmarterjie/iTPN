@@ -20,7 +20,7 @@ from timm.models.vision_transformer import trunc_normal_
 from models.masked_autoencoder import MaskedAutoencoder
 from models.iTPN_clip_distill import iTPN, PatchMerge, PatchSplit, BlockWithRPE
 from models.iTPN_clip_distill import \
-    PatchEmbed as PatchEmbed_tpn  # it is not the same as PatchEmbed in modeling_finetune
+    PatchEmbed as PatchEmbed_tpn 
 from util.pos_embed import get_2d_sincos_pos_embed
 
 
