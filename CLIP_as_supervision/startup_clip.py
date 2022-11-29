@@ -10,7 +10,7 @@ parser.add_argument('--epochs', type=int, default=800, help='total pre-training 
 parser.add_argument('--warmup_epochs', type=int, default=10, help='the warmup epochs')
 parser.add_argument('--model', type=str, default='clip_tpn_base_3324_patch16_224',
                     help='the path of the config file')
-parser.add_argument('--clip_path', type=str, default='', help='the path of the CLIP model')
+parser.add_argument('--clip_path', type=str, default='./ViT-B-16.pt', help='the path of the CLIP model')
 parser.add_argument('--input_size', default=224, type=int,
                     help='images input size for backbone')
 parser.add_argument('--second_input_size', default=224, type=int,
@@ -36,11 +36,11 @@ parser.add_argument('--world_size', type=int, default=8, help='world size')
 
 args, unparsed = parser.parse_known_args()
 
-if args.second_input_size == 196 or args.input_size > 224:
-    mox.file.copy_parallel(args.clip_path, './ViT-L-14.pt')
-else:
-    mox.file.copy_parallel(args.clip_path, './ViT-B-16.pt')
-print('Finish copying dataset')
+##if args.second_input_size == 196 or args.input_size > 224:
+#    mox.file.copy_parallel(args.clip_path, './ViT-L-14.pt')
+#else:
+#    mox.file.copy_parallel(args.clip_path, './ViT-B-16.pt')
+#print('Finish copying dataset')
 
 ###########################################################################################################
 
