@@ -73,6 +73,7 @@ cmd_str = f"python -m torch.distributed.launch --nnodes={modelarts_world_size} -
             --opt_betas 0.9 {args.beta}  \
             --opt_eps {args.opt_eps}   \
             --epochs {args.epochs} \
+            --clip_path {args.clip_path} \
             --save_ckpt_freq 20 "
 
 print('The running command is: ' + cmd_str)
