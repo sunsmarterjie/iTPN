@@ -14,6 +14,7 @@ import torch
 import torch.nn as nn
 from functools import partial
 
+from modeling_finetune import _cfg
 from timm.models.registry import register_model
 from typing import Iterable
 from timm.models.vision_transformer import trunc_normal_
