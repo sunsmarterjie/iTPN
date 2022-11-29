@@ -28,11 +28,7 @@ from torch._six import inf
 from modeling_discrete_vae import Dalle_VAE, DiscreteVAE
 
 # from vqgan.patch_vqgan import PatchVQGAN, get_default_vqgan_config
-from vqgan.vit_vqgan import ViTVQGAN, get_default_vitvqgan_config
-
-from vqgan.conformer_vqgan import CONFORMERVQGAN, get_default_conformervqgan_config
-from vqgan.conformer_vqgan_p14 import CONFORMERVQGAN  as CONFORMERVQGAN_p14
-from vqgan.conformer_vqgan_p14 import get_default_conformervqgan_config as get_default_conformervqgan_config_p14
+# from vqgan.vit_vqgan import ViTVQGAN, get_default_vitvqgan_config
 
 import pdb
 
