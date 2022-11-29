@@ -29,7 +29,7 @@ parser.add_argument('--beta', default=0.98, type=float, help='Optimizer Epsilon 
 parser.add_argument('--blr', type=float, default=1.0e-3, metavar='LR',
                     help='base learning rate: absolute_lr = base_lr * total_batch_size / 256')
 parser.add_argument('--layer_scale_init_value', default=0.1, type=float,
-                    help="0.1 for base, 1e-5 for large. set 0 to disable layer scale")
+                    help="We use 0.1 for both base and large models -- which might not be the best setting")
 parser.add_argument('--num_gpus', type=int, default=8, help='the number of gpus')
 parser.add_argument('--rank', type=int, default=0, help='node rank')
 parser.add_argument('--world_size', type=int, default=8, help='world size')
