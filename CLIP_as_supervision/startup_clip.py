@@ -14,7 +14,7 @@ parser.add_argument('--clip_path', type=str, default='', help='the path of the C
 parser.add_argument('--input_size', default=224, type=int,
                     help='images input size for backbone')
 parser.add_argument('--second_input_size', default=224, type=int,
-                    help='images input size for CLIP teacher')
+                    help='images input size for CLIP teacher -- note that CLIP-L is 14x14 patch size')
 parser.add_argument('--drop_path', type=float, default=0.1, metavar='PCT',
                     help='Drop path rate (default: 0.1)')
 
