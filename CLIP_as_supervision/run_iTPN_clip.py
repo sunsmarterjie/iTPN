@@ -38,6 +38,8 @@ def get_args():
     parser.add_argument('--batch_size', default=64, type=int)
     parser.add_argument('--epochs', default=800, type=int)
     parser.add_argument('--save_ckpt_freq', default=20, type=int)
+    
+    parser.add_argument('--clip_path', type=str, default='../ViT-B-16.pt', help='the path of the CLIP model')
 
     # Model parameters
     parser.add_argument('--model', default='clip_tpn_base_3324_patch16_224', type=str, metavar='MODEL',
@@ -164,7 +166,7 @@ def get_clip(args):
         model_name = 'ViT-L/14'
     else:
         model_name = 'ViT-B/16'
-    model = clip_distill(download_root='../', teacher_size=args.second_input_size, model_name=model_name).eval()
+    model = clip_distill(download_root=args.clip_path[:11], teacher_size=args.second_input_size, model_name=model_name).eval()
     return model
 
 
