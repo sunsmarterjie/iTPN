@@ -55,6 +55,8 @@ def get_args():
                         help='number of the visual tokens/patches need be masked')
     parser.add_argument('--max_mask_patches_per_block', type=int, default=None)
     parser.add_argument('--min_mask_patches_per_block', type=int, default=16)
+    
+    parser.add_argument("--discrete_vae_type", type=str, default="CLIP")
 
     parser.add_argument('--input_size', default=224, type=int,
                         help='images input size for backbone')
