@@ -28,14 +28,6 @@ class Attention(nn.Module):
         self.proj_drop = nn.Dropout(proj_drop)
         self.softmax = nn.Softmax(dim=-1)
 
-        # self.qkv = nn.Linear(dim, dim * 3, bias=False)
-        # if qkv_bias:
-        #     self.q_bias = nn.Parameter(torch.zeros(dim))
-        #     self.v_bias = nn.Parameter(torch.zeros(dim))
-        # else:
-        #     self.q_bias = None
-        #     self.v_bias = None
-
     def forward(self, x, rpe_index=None, mask=None):
         B, N, C = x.shape
         qkv = self.qkv(x).reshape(B, N, 3, self.num_heads, C // self.num_heads).permute(2, 0, 3, 1, 4)
@@ -111,10 +103,6 @@ class BlockWithRPE(nn.Module):
             if self.attn is not None:
                 x = x + self.drop_path(self.gamma_1 * self.attn(self.norm1(x), rpe_index, mask))
             x = x + self.drop_path(self.gamma_2 * self.mlp(self.norm2(x)))
-        #
-        # if self.attn is not None:
-        #     x = x + self.drop_path(self.attn(self.norm1(x), rpe_index, mask))
-        # x = x + self.drop_path(self.mlp(self.norm2(x)))
         return x
 
 
@@ -175,6 +163,7 @@ class PatchMerge(nn.Module):
         return x
 
 
+# PatchSplit is for upsample
 class PatchSplit(nn.Module):
     def __init__(self, dim, fpn_dim, norm_layer):
         super().__init__()
@@ -198,8 +187,7 @@ class iTPN(nn.Module):
     def __init__(self, img_size=224, patch_size=16, in_chans=3, num_classes=1000, embed_dim=512, mlp_depth1=3,
                  mlp_depth2=3, depth=24, fpn_dim=256, num_heads=8, bridge_mlp_ratio=3., mlp_ratio=4., fpn_depth=2,
                  init_values=None, qkv_bias=True, qk_scale=None, drop_rate=0., attn_drop_rate=0., drop_path_rate=0.0,
-                 norm_layer=nn.LayerNorm, ape=True, rpe=True, patch_norm=True, use_checkpoint=False,
-                 num_outs=-1,
+                 norm_layer=nn.LayerNorm, ape=True, rpe=True, patch_norm=True, use_checkpoint=False, num_outs=-1,
                  **kwargs):
         super().__init__()
         assert num_outs in [-1, 1, 2, 3, 4, 5]
@@ -285,7 +273,7 @@ class iTPN(nn.Module):
                     drop=drop_rate, attn_drop=attn_drop_rate, drop_path=0.,
                     rpe=rpe, norm_layer=norm_layer
                 ))
-        if self.num_outs > 1:
+            
             self.align_dim_16to8 = nn.Linear(mlvl_dims['8'], fpn_dim, bias=False)
             self.split_16to8 = PatchSplit(mlvl_dims['16'], fpn_dim, norm_layer)
             self.block_16to8 = nn.Sequential(
@@ -513,9 +501,3 @@ class iTPN(nn.Module):
         return outs, aux_out
 
 
-# Model PARAMs 78.56M, FLOPs 17.85G with 224 input
-# def hirep_base(**kwargs):
-#     model = HiRep_Fpn(
-#         embed_dim=512, mlp_depth=3, depth=24, num_heads=8, bridge_mlp_ratio=3., mlp_ratio=4.,
-#         rpe=True, num_outs=-1, norm_layer=partial(nn.LayerNorm, eps=1e-6), **kwargs)
-#     return model
