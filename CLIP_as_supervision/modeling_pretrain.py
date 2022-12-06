@@ -213,7 +213,7 @@ class iTPNClipDistill(MaskedAutoencoder, iTPN):
 def clip_tpn_base_3324_patch16_224(pretrained=False, **kwargs):
     model = iTPNClipDistill(
         patch_size=16, embed_dim=512, mlp_depth1=3, mlp_depth2=3, depth=24, num_heads=8, bridge_mlp_ratio=3.,
-        mlp_ratio=4, num_outs=3, rpe=True, fpn_dim=256, fpn_depth=2, out_dim=512, 
+        mlp_ratio=4, num_outs=3, rpe=True, fpn_dim=256, fpn_depth=1, out_dim=512, 
         norm_layer=partial(nn.LayerNorm, eps=1e-6), **kwargs)
     model.default_cfg = _cfg()
     if pretrained:
@@ -228,7 +228,7 @@ def clip_tpn_base_3324_patch16_224(pretrained=False, **kwargs):
 def clip_tpn_large_2240_patch16_224(pretrained=False, **kwargs):
     model = iTPNClipDistill(
         patch_size=16, embed_dim=768, mlp_depth1=2, mlp_depth2=2, depth=40, num_heads=12, bridge_mlp_ratio=3.,
-        mlp_ratio=4, num_outs=3, rpe=True, fpn_dim=256, fpn_depth=2, out_dim=768, 
+        mlp_ratio=4, num_outs=3, rpe=True, fpn_dim=256, fpn_depth=1, out_dim=768, 
         norm_layer=partial(nn.LayerNorm, eps=1e-6), **kwargs)
     model.default_cfg = _cfg()
     if pretrained:
@@ -245,7 +245,7 @@ def clip_tpn_large_2240_patch16_256(pretrained=False, **kwargs):
         img_size=256,
         patch_size=16, embed_dim=768, mlp_depth1=2, mlp_depth2=2, depth=40, num_heads=12,
         bridge_mlp_ratio=3.,
-        mlp_ratio=4, num_outs=3, rpe=True, fpn_dim=256, fpn_depth=2, out_dim=768, 
+        mlp_ratio=4, num_outs=3, rpe=True, fpn_dim=256, fpn_depth=1, out_dim=768, 
         norm_layer=partial(nn.LayerNorm, eps=1e-6), **kwargs)
     model.default_cfg = _cfg()
     if pretrained:
