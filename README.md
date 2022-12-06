@@ -38,6 +38,10 @@ Figure 1: On ImageNet-1K classification, iTPN shows significant advantages over 
 
 ## Updates
 
+***06/Dec./2022***
+
+CLIP_as_supervision part of the code has been completed.
+
 ***25/Nov./2022***
 
 The preprint version is public at [arxiv](https://arxiv.org/pdf/2211.12735.pdf).
