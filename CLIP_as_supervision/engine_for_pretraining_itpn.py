@@ -1,11 +1,10 @@
 # --------------------------------------------------------
-# BEiT v2: Masked Image Modeling with Vector-Quantized Visual Tokenizers (https://arxiv.org/abs/2208.06366)
-# Github source: https://github.com/microsoft/unilm/tree/master/beitv2
 # Copyright (c) 2022 Microsoft
 # Licensed under The MIT License [see LICENSE for details]
-# By Zhiliang Peng
-# Based on BEiT, timm, DeiT and DINO code bases
+# By Yunjie Tian
+# Based on BEiT, BEiT-v2, timm, DeiT and DINO code bases
 # https://github.com/microsoft/unilm/tree/master/beit
+# https://github.com/microsoft/unilm/tree/master/beitv2
 # https://github.com/rwightman/pytorch-image-models/tree/master/timm
 # https://github.com/facebookresearch/deit/
 # https://github.com/facebookresearch/dino
@@ -57,8 +56,7 @@ def train_one_epoch(model: torch.nn.Module, clip_tea: torch.nn.Module,
             with torch.cuda.amp.autocast():
                 input_ids = clip_tea(images)
             bool_masked_pos = bool_masked_pos.flatten(1).to(torch.bool)
-            labels = input_ids  # [bool_masked_pos]
-            # print('labels:', labels.shape)
+            labels = input_ids  # [bool_masked_pos]  # supervise all tokens or only the masked tokens
 
         with torch.cuda.amp.autocast():  # enabled=False
             outputs = model(samples, bool_masked_pos=bool_masked_pos)
