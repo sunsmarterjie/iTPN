@@ -18,7 +18,6 @@ parser.add_argument('--second_input_size', default=224, type=int,
 parser.add_argument('--drop_path', type=float, default=0.1, metavar='PCT',
                     help='Drop path rate (default: 0.1)')  
 
-parser.add_argument('--resume_path', default='', help='resume path of the checkpoint')
 parser.add_argument('--num_mask_patches', default=75, type=int,
                         help='number of the visual tokens/patches need be masked')
 
