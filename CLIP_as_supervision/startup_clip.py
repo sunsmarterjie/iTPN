@@ -16,13 +16,10 @@ parser.add_argument('--input_size', default=224, type=int,
 parser.add_argument('--second_input_size', default=224, type=int,
                     help='images input size for CLIP teacher -- note that CLIP-L is 14x14 patch size')
 parser.add_argument('--drop_path', type=float, default=0.1, metavar='PCT',
-                    help='Drop path rate (default: 0.1)')
+                    help='Drop path rate (default: 0.1)')  
 
-parser.add_argument('--resume_path', default='', help='resume from checkpoint')
-parser.add_argument('--resume', default='', help='resume from checkpoint')
+parser.add_argument('--resume_path', default='', help='resume path of the checkpoint')
 
-parser.add_argument('--mask_ratio', default=0.4, type=float,
-                    help='ratio of the visual tokens/patches need be masked')
 parser.add_argument('--opt_eps', default=1e-8, type=float, metavar='EPSILON',
                     help='Optimizer Epsilon (default: 1e-8)')
 parser.add_argument('--beta', default=0.98, type=float, help='Optimizer Epsilon (default: 1e-8)')
