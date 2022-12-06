@@ -19,6 +19,8 @@ parser.add_argument('--drop_path', type=float, default=0.1, metavar='PCT',
                     help='Drop path rate (default: 0.1)')  
 
 parser.add_argument('--resume_path', default='', help='resume path of the checkpoint')
+parser.add_argument('--num_mask_patches', default=75, type=int,
+                        help='number of the visual tokens/patches need be masked')
 
 parser.add_argument('--opt_eps', default=1e-8, type=float, metavar='EPSILON',
                     help='Optimizer Epsilon (default: 1e-8)')
@@ -50,7 +52,7 @@ cmd_str = f"python -m torch.distributed.launch --nnodes={modelarts_world_size} -
             --output_dir=../output \
             --log_dir=../output  \
             --model {args.model}  \
-            --num_mask_patches 75  \
+            --num_mask_patches {args.num_mask_patches}  \
             --second_input_size {args.second_input_size}  \
             --second_interpolation 'bicubic'  \
             --batch_size {args.batch_size} \
