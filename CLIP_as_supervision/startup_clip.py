@@ -33,12 +33,6 @@ parser.add_argument('--world_size', type=int, default=8, help='world size')
 
 args, unparsed = parser.parse_known_args()
 
-##if args.second_input_size == 196 or args.input_size > 224:
-#    mox.file.copy_parallel(args.clip_path, './ViT-L-14.pt')
-#else:
-#    mox.file.copy_parallel(args.clip_path, './ViT-B-16.pt')
-#print('Finish copying dataset')
-
 ###########################################################################################################
 
 master_host = os.environ['VC_WORKER_HOSTS'].split(',')[0]
