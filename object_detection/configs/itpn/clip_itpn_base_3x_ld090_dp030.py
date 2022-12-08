@@ -138,7 +138,7 @@ data = dict(train=dict(pipeline=train_pipeline))
 optimizer = dict(
     _delete_=True,
     type='AdamW',
-    lr=0.0001,
+    lr=0.00015,
     betas=(0.9, 0.999),
     weight_decay=0.05,
     constructor='LayerDecayOptimizerConstructor',
