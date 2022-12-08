@@ -44,7 +44,7 @@ Get checkpoints (password: abcd):
 | |iTPN-B-pixel | iTPN-B-CLIP | iTPN-L-pixel | iTPN-L-CLIP/16|
 | :---: | :---: |:---: |:---: |:---: |
 |  baidu drive ||||[download](https://pan.baidu.com/s/1Gu-I3Z-25GFsfB31MQ_xZg)|
-| google drive  ||||[download](https://xxx)  |
+| google drive  ||||[download](https://drive.google.com/file/d/1gyyjcdMvAQsz2xC7ei-rEd7G4po2spy4/view?usp=share_link)|
 
 ***06/Dec./2022***
 
