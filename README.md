@@ -42,9 +42,9 @@ Figure 1: On ImageNet-1K classification, iTPN shows significant advantages over 
 
 Get checkpoints:
 | |iTPN-B-pixel | iTPN-B-pixel | iTPN-B-pixel | iTPN-B-pixel|
-| :---: | :---: |:---: |:---: |
-|  baidu drive| [download](https://drive.google.com/xxx) ||| |
-| google drive | [download](https://drive.google.com/xxx) ||| |
+| :---: | :---: |:---: |:---: |:---: |
+|  baidu drive| [download](https://drive.google.com/xxx) |||| |
+| google drive | [download](https://drive.google.com/xxx) |||| |
 
 ***06/Dec./2022***
 
