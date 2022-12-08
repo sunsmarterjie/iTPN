@@ -41,7 +41,7 @@ Figure 1: On ImageNet-1K classification, iTPN shows significant advantages over 
 ***08/Dec./2022***
 
 Get checkpoints (password: abcd):
-| |iTPN-B-pixel | iTPN-B-CLIP | iTPN-L-pixel | iTPN-L-CLIP|
+| |iTPN-B-pixel | iTPN-B-CLIP | iTPN-L-pixel | iTPN-L-CLIP/16|
 | :---: | :---: |:---: |:---: |:---: |
 |  baidu drive ||||[download](https://pan.baidu.com/s/1Gu-I3Z-25GFsfB31MQ_xZg)|
 | google drive  ||||[download](https://xxx)  |
