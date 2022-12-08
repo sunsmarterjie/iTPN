@@ -85,32 +85,6 @@ class Attention(nn.Module):
         self.softmax = nn.Softmax(dim=-1)
 
     def forward(self, x, H=None, W=None, rpe_index=None, mask=None):
-        #B, N, C = x.shape
-        #qkv = self.qkv(x).reshape(B, N, 3, self.num_heads, C // self.num_heads).permute(2, 0, 3, 1, 4)
-        #q, k, v = qkv[0], qkv[1], qkv[2]  # make torchscript happy (cannot use tensor as tuple)
-
-        #q = q * self.scale
-        #attn = (q @ k.transpose(-2, -1))
-
-        # if rpe_index is not None:
-        #     S = int(math.sqrt(rpe_index.size(-1)))
-        #     relative_position_bias = self.relative_position_bias_table[rpe_index].view(-1, S, S, self.num_heads)
-        #     relative_position_bias = relative_position_bias.permute(0, 3, 1, 2).contiguous()
-        #     attn = attn + relative_position_bias
-        # if mask is not None:
-        #     mask = mask.bool()
-        #     attn = attn.masked_fill(~mask[:, None, None, :], float("-inf"))
-        # attn = attn.float().clamp(min=torch.finfo(torch.float32).min, max=torch.finfo(torch.float32).max)
-
-        #attn = self.softmax(attn)
-        #attn = self.attn_drop(attn)
-
-        #x = (attn @ v).transpose(1, 2).reshape(B, N, C)
-        #x = self.proj(x)
-        #x = self.proj_drop(x)
-        
-        
-        
         B, H, W, _ = x.shape
         qkv = self.qkv(x).reshape(B, H * W, 3, self.num_heads, -1).permute(2, 0, 3, 1, 4)
         q, k, v = qkv.reshape(3, B * self.num_heads, H * W, -1).unbind(0)
