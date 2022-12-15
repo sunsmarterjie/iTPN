@@ -2,6 +2,8 @@
 
 Official PyTorch implementation and pretrained models of iTPN (CLIP as supervision).
 
+Pre-train:
+
 ```bash
 python startup_clip.py \
     --world_size 8 \
@@ -16,4 +18,20 @@ python startup_clip.py \
     --layer_scale_init_value 0.1 \
     --opt_eps 1e-8 \
     --second_input_size 196 \
+```
+
+Fine-tune:
+```bash
+python startup_ft.py \
+    --world_size 4 \
+    --batch_size 16 \
+    --model itpn_large_2240_patch16_224 \
+    --blr 2.0e-4 \
+    --pretrained ../path_to_pretrained \
+    --drop_path 0.25 \
+    --epochs 50 \
+    --input_size 224 \
+    --layer_decay 0.55 \
+    --update_freq 2 \
+    --warmup_epochs 5 \
 ```
