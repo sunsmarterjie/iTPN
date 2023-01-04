@@ -25,7 +25,7 @@ from pathlib import Path
 import torch
 import torch.distributed as dist
 from torch._six import inf
-from modeling_discrete_vae import Dalle_VAE, DiscreteVAE
+# from modeling_discrete_vae import Dalle_VAE, DiscreteVAE
 
 # from vqgan.patch_vqgan import PatchVQGAN, get_default_vqgan_config
 # from vqgan.vit_vqgan import ViTVQGAN, get_default_vitvqgan_config
