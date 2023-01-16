@@ -307,7 +307,7 @@ def main(args, ds_init):
         num_classes=args.nb_classes,
         drop_path_rate=args.drop_path,
         use_mean_pooling=args.use_mean_pooling,
-        init_values=args.layer_scale_init_value,
+        init_values=args.layer_scale_init_value,    # Correction: adding this line
     )
 
     patch_size = model.patch_embed.patch_size
