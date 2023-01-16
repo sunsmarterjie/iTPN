@@ -46,9 +46,6 @@ Get checkpoints (password: abcd):
 |  baidu drive ||||[download](https://pan.baidu.com/s/1Gu-I3Z-25GFsfB31MQ_xZg)|
 | google drive  ||||[download](https://drive.google.com/file/d/1gyyjcdMvAQsz2xC7ei-rEd7G4po2spy4/view?usp=share_link)|
 
-***06/Dec./2022***
-
-CLIP_as_supervision part of the code has been completed.
 
 ***25/Nov./2022***
 
