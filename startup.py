@@ -20,12 +20,14 @@ parser.add_argument('--world_size', type=int, default=8, help='how many machine 
 parser.add_argument('--init_method', type=str, default='tcp://127.0.0.1:6666')
 args, unparsed = parser.parse_known_args()
 
-
 master_addr = args.init_method[:-5]
 master_port = args.init_method[-4:]
+os.environ['MASTER_ADDR'] = master_addr
+os.environ['MASTER_PORT'] = master_port
 
 cmd_str = f"python -m torch.distributed.launch --nproc_per_node {args.num_gpus} \
-    --nnodes={args.world_size} main_pretrain.py --batch_size {args.batch_size} --epochs {args.epochs} \
+    --nnodes={args.world_size} --master_addr={master_addr} --master_port={master_port} \
+    main_pretrain.py --batch_size {args.batch_size} --epochs {args.epochs} \
     --model {args.model} --warmup_epochs {args.warmup_epochs} --mask_ratio {args.mask_ratio} \
     --blr {args.blr} --data_path {args.data_path}"
 
