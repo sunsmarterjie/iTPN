@@ -1,3 +1,14 @@
+
+# All rights reserved.
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+# --------------------------------------------------------
+# References:
+# MAE: https://github.com/facebookresearch/mae
+# BEiT: https://github.com/microsoft/unilm/tree/master/beit
+# --------------------------------------------------------
+
+
 from typing import Iterable
 import torch
 import torch.nn as nn
