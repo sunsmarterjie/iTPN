@@ -224,27 +224,30 @@ python startup_ft.py \
     --layer_decay 0.55 \
     --update_freq 1 \
     --warmup_epochs 5 \
-    --mixup 0.9 \
+    --mixup 0.8 \
     --cutmix  1.0 \
+    --weight_decay 0.05
 ```
  
  OR 
 
 ```bash    
 python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NODE_RANK \
-    --master_addr=$MASTER_ADDR --master_port=6666  run_iTPN_clip.py \
-    --world_size 8 \
+    --master_addr=$MASTER_ADDR --master_port=6666  run_class_finetuning_tpn.py \
+    --world_size 4 \
     --batch_size 32 \
-    --model clip_tpn_large_2240_patch16_256 \
-    --beta 0.98 \
-    --blr 1.5e-3 \
-    --clip_path ../ViT-L-14.pt \
+    --model itpn_base_3324_patch16_224 \
+    --blr 5.0e-4 \
+    --weight ../path_to_checkpoint \
     --drop_path 0.2 \
-    --epochs 300 \
-    --input_size 256 \
-    --layer_scale_init_value 0.1 \
-    --opt_eps 1e-8 \
-    --second_input_size 224 \
+    --epochs 100 \
+    --input_size 224 \
+    --layer_decay 0.55 \
+    --update_freq 1 \
+    --warmup_epochs 5 \
+    --mixup 0.8 \
+    --cutmix  1.0 \
+    --weight_decay 0.05
 ```
 </details>
 Fine-tune:
