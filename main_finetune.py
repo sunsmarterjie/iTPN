@@ -33,6 +33,7 @@ from timm.utils import ModelEmaV2
 
 import util.lr_decay as lrd
 import util.misc as misc
+from util.flop_count import flop_count
 from util.datasets import build_dataset
 from util.pos_embed import interpolate_pos_embed
 from util.misc import NativeScalerWithGradNormCount as NativeScaler
@@ -40,7 +41,6 @@ from util.misc import NativeScalerWithGradNormCount as NativeScaler
 import models
 
 from engine_finetune import train_one_epoch, evaluate
-from flop_count import flop_count
 
 
 def get_args_parser():
