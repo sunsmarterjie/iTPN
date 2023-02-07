@@ -5,12 +5,13 @@ import logging
 import time
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--batch_size', type=int, default=64, help='batch size per gpu')
-parser.add_argument('--epochs', type=int, default=800, help='total pre-training epochs')
-parser.add_argument('--warmup_epochs', type=int, default=10, help='the warmup epochs')
-parser.add_argument('--model', type=str, default='clip_tpn_base_3324_patch16_224',
-                    help='the path of the config file')
-parser.add_argument('--clip_path', type=str, default='../ViT-B-16.pt', help='the path of the CLIP model')
+parser.add_argument('--batch_size', type=int, default=64)
+parser.add_argument('--epochs', type=int, default=800)
+parser.add_argument('--warmup_epochs', type=int, default=10)
+parser.add_argument('--model', type=str, default='clip_tpn_base_3324_patch16_224', metavar='MODEL', 
+                    help='the name of model to train')
+parser.add_argument('--clip_path', type=str, default='../ViT-B-16.pt', 
+                    help='the path of the CLIP model')
 parser.add_argument('--input_size', default=224, type=int,
                     help='images input size for backbone')
 parser.add_argument('--second_input_size', default=224, type=int,
@@ -31,21 +32,18 @@ parser.add_argument('--layer_scale_init_value', default=0.1, type=float,
 parser.add_argument('--num_gpus', type=int, default=8, help='the number of gpus')
 parser.add_argument('--rank', type=int, default=0, help='node rank')
 parser.add_argument('--world_size', type=int, default=8, help='world size')
-
+parser.add_argument('--init_method', type=str, default='tcp://127.0.0.1:6666')
 args, unparsed = parser.parse_known_args()
 
-###########################################################################################################
 
-master_host = os.environ['VC_WORKER_HOSTS'].split(',')[0]
-master_addr = master_host.split(':')[0]
-master_port = '8525'  # '8524'
-modelarts_rank = args.rank  # ModelArts receive FLAGS.rank means node_rank
-modelarts_world_size = args.world_size  # ModelArts receive FLAGS.worldsize means nodes_num
+master_addr = args.init_method[:-5]
+master_port = args.init_method[-4:]
 os.environ['MASTER_ADDR'] = master_addr
 os.environ['MASTER_PORT'] = master_port
-#######################################################################################################
-cmd_str = f"python -m torch.distributed.launch --nnodes={modelarts_world_size} --nproc_per_node=8 --node_rank={modelarts_rank} \
-            --master_addr={master_addr} --master_port={master_port} run_iTPN_clip.py \
+
+cmd_str = f"python -m torch.distributed.launch --nnodes={args.world_size} --nproc_per_node=8 \
+            --node_rank={args.rank} --master_addr={master_addr} --master_port={master_port} \
+            run_iTPN_clip.py \
             --data_set=../imagenet/ \
             --data_path=../imagenet/train \
             --output_dir=../output \
@@ -57,7 +55,7 @@ cmd_str = f"python -m torch.distributed.launch --nnodes={modelarts_world_size} -
             --batch_size {args.batch_size} \
             --input_size {args.input_size} \
             --lr {args.blr}  \
-            --warmup_epochs 10  \
+            --warmup_epochs {args.warmup_epochs}  \
             --clip_grad 3.0  \
             --drop_path {args.drop_path}  \
             --layer_scale_init_value {args.layer_scale_init_value}  \
