@@ -346,6 +346,7 @@ def main(args):
                 args.resume = f'{args.output_dir}/checkpoint-{last_epoch}.pth'
         except:
             pass
+        
     misc.load_model(args=args, model_without_ddp=model_without_ddp, optimizer=optimizer, loss_scaler=loss_scaler,
                     model_ema=model_ema)
 
