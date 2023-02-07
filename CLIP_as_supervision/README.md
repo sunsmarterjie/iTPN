@@ -206,6 +206,8 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NO
 </details>
 
 
+## iTPN Fine-Tuning on ImageNet-1K: 
+
 Fine-tune:
 ```bash
 python startup_ft.py \
