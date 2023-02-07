@@ -80,9 +80,9 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NO
     --opt_eps 1e-8 \
     --second_input_size 196 \
 ```
- 
-
 </details>
+
+
 
 <details>
  <summary> Pre-train <b>iTPN-L/16</b> using <b>CLIP-B</b>:</summary>
@@ -124,21 +124,85 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NO
 </details>
 
 
-```bash
+<details>
+ <summary> Pre-train <b>iTPN-L/16</b> using <b>CLIP-L</b>:</summary>
+
+```bash    
 python startup_clip.py \
     --world_size 8 \
     --batch_size 32 \
     --model clip_tpn_large_2240_patch16_224 \
     --beta 0.98 \
     --blr 1.5e-3 \
-    --clip_path ../ViT-B-16.pt \
+    --clip_path ../ViT-L-14.pt \
     --drop_path 0.2 \
     --epochs 300 \
     --input_size 224 \
     --layer_scale_init_value 0.1 \
     --opt_eps 1e-8 \
+    --second_input_size 196 \
+```
+ 
+ OR 
+
+```bash    
+python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NODE_RANK \
+    --master_addr=$MASTER_ADDR --master_port=6666  run_iTPN_clip.py \
+    --world_size 8 \
+    --batch_size 32 \
+    --model clip_tpn_large_2240_patch16_224 \
+    --beta 0.98 \
+    --blr 1.5e-3 \
+    --clip_path ../ViT-L-14.pt \
+    --drop_path 0.2 \
+    --epochs 300 \
+    --input_size 224 \
+    --layer_scale_init_value 0.1 \
+    --opt_eps 1e-8 \
+    --second_input_size 196 \
+```
+</details>
+
+
+<details>
+ <summary> Pre-train <b>iTPN-L/14</b> using <b>CLIP-L</b>:</summary>
+
+```bash    
+python startup_clip.py \
+    --world_size 8 \
+    --batch_size 32 \
+    --model clip_tpn_large_2240_patch16_256 \
+    --beta 0.98 \
+    --blr 1.5e-3 \
+    --clip_path ../ViT-L-14.pt \
+    --drop_path 0.2 \
+    --epochs 300 \
+    --input_size 256 \
+    --layer_scale_init_value 0.1 \
+    --opt_eps 1e-8 \
+    --second_input_size 225 \
+```
+ 
+ OR 
+
+```bash    
+python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NODE_RANK \
+    --master_addr=$MASTER_ADDR --master_port=6666  run_iTPN_clip.py \
+    --world_size 8 \
+    --batch_size 32 \
+    --model clip_tpn_large_2240_patch16_256 \
+    --beta 0.98 \
+    --blr 1.5e-3 \
+    --clip_path ../ViT-L-14.pt \
+    --drop_path 0.2 \
+    --epochs 300 \
+    --input_size 256 \
+    --layer_scale_init_value 0.1 \
+    --opt_eps 1e-8 \
     --second_input_size 224 \
 ```
+</details>
+
 
 Fine-tune:
 ```bash
