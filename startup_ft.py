@@ -1,3 +1,8 @@
+# All rights reserved.
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+# --------------------------------------------------------
+
 import ast
 import os
 import argparse
@@ -5,17 +10,18 @@ import logging
 import time
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--pretrained', type=str, default='', help='the path of the config file')
-parser.add_argument('--batch_size', type=int, default=64, help='the path of the config file')
-parser.add_argument('--epochs', type=int, default=100, help='the path of the config file')
-parser.add_argument('--warmup_epochs', type=int, default=5, help='the path of the config file')
-parser.add_argument('--model', type=str, default='itpn_base', help='the path of the config file')
-parser.add_argument('--dist_eval', action='store_true', default=True, help='the path of the config file')
-parser.add_argument('--weight', type=str, default='../weight.pth', help='the path of the config file')
+parser.add_argument('--batch_size', type=int, default=64, help='the batch size per GPU')
+parser.add_argument('--epochs', type=int, default=100)
+parser.add_argument('--warmup_epochs', type=int, default=5)
+parser.add_argument('--model', type=str, default='itpn_base', metavar='MODEL',
+                    help='the name of model to train')
+parser.add_argument('--dist_eval', action='store_true', default=True, 
+                   help='enabling distributed evaluation')
+parser.add_argument('--weight', type=str, default='../weight.pth', help='the path of the checkpoint file')
 parser.add_argument('--blr', type=float, default=5e-4, metavar='LR',
                     help='base learning rate: absolute_lr = base_lr * total_batch_size / 256')
-parser.add_argument('--min_lr', type=float, default=5e-6, metavar='LR',
-                    help='base learning rate: absolute_lr = base_lr * total_batch_size / 256')
+parser.add_argument('--min_lr', type=float, default=1e-6, metavar='LR',
+                    help='lower lr bound for cyclic schedulers that hit 0 (1e-5)')
 parser.add_argument('--layer_decay', type=float, default=0.65,
                     help='layer-wise lr decay from ELECTRA/BEiT')
 parser.add_argument('--mixup', type=float, default=0.8,
@@ -25,7 +31,7 @@ parser.add_argument('--cutmix', type=float, default=1.0,
 parser.add_argument('--clip_grad', type=float, default=5.0,
                     help='Clip gradient norm (default: None, no clipping)')
 parser.add_argument('--drop_path', type=float, default=.1,
-                    help='Clip gradient norm (default: None, no clipping)')
+                    help='Drop path rate (default: 0.1)')
 
 parser.add_argument('--num_gpus', type=int, default=8, help='the number of gpus')
 parser.add_argument('--rank', type=int, default=0, help='node rank')
