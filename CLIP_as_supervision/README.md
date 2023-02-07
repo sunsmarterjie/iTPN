@@ -27,7 +27,7 @@ python startup_clip.py \
 
 ```bash    
 python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NODE_RANK \
-    --master_addr=$MASTER_ADDR --master_port=6666  run_iTPN_clip.py \
+    --master_addr=$MASTER_ADDR --master_port=6666  run_itpn_pretraining.py \
     --world_size 8 \
     --batch_size 32 \
     --model clip_tpn_base_3324_patch16_224 \
@@ -68,7 +68,7 @@ python startup_clip.py \
 
 ```bash    
 python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NODE_RANK \
-    --master_addr=$MASTER_ADDR --master_port=6666  run_iTPN_clip.py \
+    --master_addr=$MASTER_ADDR --master_port=6666  run_itpn_pretraining.py \
     --world_size 8 \
     --batch_size 32 \
     --model clip_tpn_base_3324_patch16_224 \
@@ -109,7 +109,7 @@ python startup_clip.py \
 
 ```bash    
 python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NODE_RANK \
-    --master_addr=$MASTER_ADDR --master_port=6666  run_iTPN_clip.py \
+    --master_addr=$MASTER_ADDR --master_port=6666  run_itpn_pretraining.py \
     --world_size 8 \
     --batch_size 32 \
     --model clip_tpn_large_2240_patch16_224 \
@@ -149,7 +149,7 @@ python startup_clip.py \
 
 ```bash    
 python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NODE_RANK \
-    --master_addr=$MASTER_ADDR --master_port=6666  run_iTPN_clip.py \
+    --master_addr=$MASTER_ADDR --master_port=6666  run_itpn_pretraining.py \
     --world_size 8 \
     --batch_size 32 \
     --model clip_tpn_large_2240_patch16_224 \
@@ -189,7 +189,7 @@ python startup_clip.py \
 
 ```bash    
 python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NODE_RANK \
-    --master_addr=$MASTER_ADDR --master_port=6666  run_iTPN_clip.py \
+    --master_addr=$MASTER_ADDR --master_port=6666  run_itpn_pretraining.py \
     --world_size 8 \
     --batch_size 32 \
     --model clip_tpn_large_2240_patch16_256 \
@@ -233,7 +233,7 @@ python startup_ft.py \
 
 ```bash    
 python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NODE_RANK \
-    --master_addr=$MASTER_ADDR --master_port=6666  run_class_finetuning_tpn.py \
+    --master_addr=$MASTER_ADDR --master_port=6666  run_itpn_finetuning.py \
     --world_size 4 \
     --batch_size 32 \
     --model itpn_base_3324_patch16_224 \
@@ -277,7 +277,7 @@ python startup_ft.py \
 
 ```bash    
 python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NODE_RANK \
-    --master_addr=$MASTER_ADDR --master_port=6666  run_class_finetuning_tpn.py \
+    --master_addr=$MASTER_ADDR --master_port=6666  run_itpn_finetuning.py \
     --world_size 4 \
     --batch_size 16 \
     --model itpn_large_2240_patch16_224 \
@@ -320,7 +320,7 @@ python startup_ft.py \
 
 ```bash    
 python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NODE_RANK \
-    --master_addr=$MASTER_ADDR --master_port=6666  run_class_finetuning_tpn.py \
+    --master_addr=$MASTER_ADDR --master_port=6666  run_itpn_finetuning.py \
     --world_size 4 \
     --batch_size 16 \
     --model itpn_large_2240_patch16_256 \
