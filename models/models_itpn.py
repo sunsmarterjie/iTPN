@@ -1,3 +1,13 @@
+# All rights reserved.
+# This source code is licensed under the license found in the
+# LICENSE file in the root directory of this source tree.
+# --------------------------------------------------------
+# References:
+# DeiT: https://github.com/facebookresearch/deit
+# BEiT: https://github.com/microsoft/unilm/tree/master/beit
+# MAE: https://github.com/facebookresearch/mae
+# --------------------------------------------------------
+
 import math
 import torch
 import torch.nn as nn
@@ -56,13 +66,11 @@ class Attention(nn.Module):
 
 class BlockWithRPE(nn.Module):
     def __init__(self, input_size, dim, num_heads=0., mlp_ratio=4., qkv_bias=True, qk_scale=None,
-                 drop=0., attn_drop=0., drop_path=0., rpe=True, act_layer=nn.GELU, norm_layer=nn.LayerNorm, factor=2,
-                 merge_att=False):
+                 drop=0., attn_drop=0., drop_path=0., rpe=True, act_layer=nn.GELU, norm_layer=nn.LayerNorm):
         super().__init__()
         self.dim = dim
         self.num_heads = num_heads
         self.mlp_ratio = mlp_ratio
-        self.merge_att = merge_att
 
         with_attn = num_heads > 0.
 
@@ -239,14 +247,22 @@ class iTPN(nn.Module):
                 self.align_dim_16tofpn = nn.Linear(embed_dim, fpn_dim)
             else:
                 self.align_dim_16tofpn = None
+                
             self.fpn_modules = nn.ModuleList()
+            
             self.fpn_modules.append(
                 BlockWithRPE(
                     Hp, fpn_dim, 0, mlp_ratio, qkv_bias, qk_scale,
                     drop=drop_rate, attn_drop=attn_drop_rate, drop_path=0.,
                     rpe=rpe, norm_layer=norm_layer
                 ))
-        if self.num_outs > 1:
+            self.fpn_modules.append(
+                BlockWithRPE(
+                    Hp, fpn_dim, 0, mlp_ratio, qkv_bias, qk_scale,
+                    drop=drop_rate, attn_drop=attn_drop_rate, drop_path=0.,
+                    rpe=rpe, norm_layer=norm_layer,
+                ))
+            
             self.align_dim_16to8 = nn.Linear(mlvl_dims['8'], fpn_dim, bias=False)
             self.split_16to8 = PatchSplit(mlvl_dims['16'], fpn_dim, norm_layer)
             self.block_16to8 = nn.Sequential(
@@ -256,12 +272,6 @@ class iTPN(nn.Module):
                     rpe=rpe, norm_layer=norm_layer,
                 ) for _ in range(fpn_depth)]
             )
-            self.fpn_modules.append(
-                BlockWithRPE(
-                    Hp, fpn_dim, 0, mlp_ratio, qkv_bias, qk_scale,
-                    drop=drop_rate, attn_drop=attn_drop_rate, drop_path=0.,
-                    rpe=rpe, norm_layer=norm_layer,
-                ))
 
         if self.num_outs > 2:
             self.align_dim_8to4 = nn.Linear(mlvl_dims['4'], fpn_dim, bias=False)
@@ -273,6 +283,7 @@ class iTPN(nn.Module):
                     rpe=rpe, norm_layer=norm_layer,
                 ) for _ in range(fpn_depth)]
             )
+            
             self.fpn_modules.append(
                 BlockWithRPE(
                     Hp, fpn_dim, 0, mlp_ratio, qkv_bias, qk_scale,
