@@ -1,6 +1,5 @@
 <div align="center">
-<h1>iTPN</h1>
-<h3>Integrally Pre-Trained Transformer Pyramid Networks</h3>
+<h3>[Integrally Pre-Trained Transformer Pyramid Networks](https://arxiv.org/pdf/2211.12735.pdf)</h3>
 
 Yunjie Tian<sup>1</sup>,
 [Lingxi Xie](https://scholar.google.com/citations?user=EEMm7hwAAAAJ&hl=zh-TW&oi=ao)<sup>2</sup>, 
@@ -14,8 +13,6 @@ Zhaozhi Wang<sup>1</sup>,
 
 <sup>1</sup> [University of Chinese Academy of Sciences](https://www.ucas.ac.cn/), <sup>2</sup> [Huawei Inc.](https://www.huawei.com/cn/?utm_source=corp_bdpz&utm_campaign=regular&utm_medium=cpc), <sup>3</sup> [Pengcheng Lab.](https://www.pcl.ac.cn/).
   
-This repo is an implementation of [Integrally Pre-Trained Transformer Pyramid Networks](https://arxiv.org/pdf/2211.12735.pdf). 
-
 ### This repo is being updated, and please stay tuned.
 
   
