@@ -43,7 +43,7 @@ os.environ['MASTER_PORT'] = master_port
 
 cmd_str = f"python -m torch.distributed.launch --nnodes={args.world_size} --nproc_per_node=8 \
             --node_rank={args.rank} --master_addr={master_addr} --master_port={master_port} \
-            run_iTPN_clip.py \
+            run_itpn_pretraining.py \
             --data_set=../imagenet/ \
             --data_path=../imagenet/train \
             --output_dir=../output \
