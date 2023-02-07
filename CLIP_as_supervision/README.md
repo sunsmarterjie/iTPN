@@ -209,7 +209,7 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NO
 ## iTPN Fine-Tuning on ImageNet-1K: 
 
 <details>
- <summary> Fine-train <b>iTPN-B</b>:</summary>
+ <summary> Fine-tune <b>iTPN-B</b>:</summary>
 
 ```bash
 python startup_ft.py \
@@ -221,7 +221,7 @@ python startup_ft.py \
     --drop_path 0.2 \
     --epochs 100 \
     --input_size 224 \
-    --layer_decay 0.55 \
+    --layer_decay 0.60 \
     --update_freq 1 \
     --warmup_epochs 5 \
     --mixup 0.8 \
@@ -242,29 +242,101 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NO
     --drop_path 0.2 \
     --epochs 100 \
     --input_size 224 \
-    --layer_decay 0.55 \
+    --layer_decay 0.60 \
     --update_freq 1 \
-    --warmup_epochs 5 \
+    --warmup_epochs 20 \
     --mixup 0.8 \
     --cutmix  1.0 \
     --weight_decay 0.05
 ```
 </details>
-Fine-tune:
+
+
+<details>
+ <summary> Fine-tune <b>iTPN-L/16</b>:</summary>
+
 ```bash
 python startup_ft.py \
     --world_size 4 \
     --batch_size 16 \
     --model itpn_large_2240_patch16_224 \
     --blr 2.0e-4 \
-    --pretrained ../path_to_pretrained \
+    --weight ../path_to_checkpoint \
     --drop_path 0.25 \
     --epochs 50 \
     --input_size 224 \
     --layer_decay 0.55 \
     --update_freq 2 \
     --warmup_epochs 5 \
+    --mixup 0.8 \
+    --cutmix  1.0 \
+    --weight_decay 0.05
 ```
+ 
+ OR 
+
+```bash    
+python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NODE_RANK \
+    --master_addr=$MASTER_ADDR --master_port=6666  run_class_finetuning_tpn.py \
+    --world_size 4 \
+    --batch_size 16 \
+    --model itpn_large_2240_patch16_224 \
+    --blr 2.0e-4 \
+    --weight ../path_to_checkpoint \
+    --drop_path 0.25 \
+    --epochs 50 \
+    --input_size 224 \
+    --layer_decay 0.55 \
+    --update_freq 2 \
+    --warmup_epochs 5 \
+    --mixup 0.8 \
+    --cutmix  1.0 \
+    --weight_decay 0.05
+```
+</details>
+
+<details>
+ <summary> Fine-tune <b>iTPN-L/14</b>:</summary>
+
+```bash
+python startup_ft.py \
+    --world_size 4 \
+    --batch_size 16 \
+    --model itpn_large_2240_patch16_256 \
+    --blr 2.0e-4 \
+    --weight ../path_to_checkpoint \
+    --drop_path 0.25 \
+    --epochs 50 \
+    --input_size 256 \
+    --layer_decay 0.55 \
+    --update_freq 2 \
+    --warmup_epochs 5 \
+    --mixup 0.8 \
+    --cutmix  1.0 \
+    --weight_decay 0.05
+```
+ 
+ OR 
+
+```bash    
+python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NODE_RANK \
+    --master_addr=$MASTER_ADDR --master_port=6666  run_class_finetuning_tpn.py \
+    --world_size 4 \
+    --batch_size 16 \
+    --model itpn_large_2240_patch16_256 \
+    --blr 2.0e-4 \
+    --weight ../path_to_checkpoint \
+    --drop_path 0.25 \
+    --epochs 50 \
+    --input_size 256 \
+    --layer_decay 0.55 \
+    --update_freq 2 \
+    --warmup_epochs 5 \
+    --mixup 0.8 \
+    --cutmix  1.0 \
+    --weight_decay 0.05
+```
+</details>
 
 
 ## iTPN Intermediate Fine-Tuning on ImageNet-21K: 
