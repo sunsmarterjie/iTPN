@@ -1,4 +1,6 @@
-# [Integrally Pre-Trained Transformer Pyramid Networks](https://arxiv.org/abs/2106.08254)
+## [Integrally Pre-Trained Transformer Pyramid Networks](https://arxiv.org/abs/2106.08254)
+
+<div align="center">
 
 Yunjie Tian<sup>1</sup>,
 [Lingxi Xie](https://scholar.google.com/citations?user=EEMm7hwAAAAJ&hl=zh-TW&oi=ao)<sup>2</sup>, 
