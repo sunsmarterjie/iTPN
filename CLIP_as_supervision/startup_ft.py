@@ -74,7 +74,7 @@ cmd_str = f"python -m torch.distributed.launch \
     --input_size {args.input_size} \
     --log_dir ../output \
     --model {args.model} \
-    --weight_decay 0.05  \
+    --weight_decay {args.weight_decay}  \
     --finetune {args.weight}  \
     --batch_size {args.batch_size}  \
     --lr {args.blr} \
@@ -82,10 +82,10 @@ cmd_str = f"python -m torch.distributed.launch \
     --warmup_epochs {args.warmup_epochs} \
     --epochs {args.epochs}  \
     --layer_decay {args.layer_decay} \
-    --min_lr 1e-6 \
+    --min_lr {args.min_lr} \
     --drop_path {args.drop_path}  \
-    --mixup 0.8 \
-    --cutmix 1.0 \
+    --mixup {args.mixup} \
+    --cutmix {args.cutmix} \
     --imagenet_default_mean_and_std   \
     --dist_eval \
     --save_ckpt_freq 20 \
