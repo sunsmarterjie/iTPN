@@ -25,7 +25,6 @@ class iTPNMaskedAutoencoder(MaskedAutoencoder, iTPN):
         self.mlp_ratio = mlp_ratio
         self.use_checkpoint = use_checkpoint
         self.num_outs = num_outs
-        self.decoder_sidein = decoder_sidein
         self.num_main_blocks = depth
         self.fpn_dim = fpn_dim
 
