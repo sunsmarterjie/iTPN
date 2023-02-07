@@ -29,7 +29,7 @@ parser.add_argument('--mixup', type=float, default=0.8,
 parser.add_argument('--cutmix', type=float, default=1.0,
                         help='cutmix alpha, cutmix enabled if > 0.')
 parser.add_argument('--clip_grad', type=float, default=5.0,
-                    help='Clip gradient norm (default: None, no clipping)')
+                    help='Clip gradient norm (default: 5.0)')
 parser.add_argument('--drop_path', type=float, default=.1,
                     help='Drop path rate (default: 0.1)')
 
