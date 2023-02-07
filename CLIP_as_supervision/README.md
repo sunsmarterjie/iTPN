@@ -2,7 +2,8 @@
 
 Official PyTorch implementation and pretrained models of [iTPN](https://arxiv.org/pdf/2211.12735.pdf) (CLIP as supervision).
 
-***Scripts of pre-training iTPN-B using CLIP-B:***
+<details>
+ <summary> Pre-train <b>iTPN-B</b> using <b>CLIP-B</b>:</summary>
 
 ```bash    
 python startup_clip.py \
@@ -20,6 +21,8 @@ python startup_clip.py \
     --second_input_size 224 \
 ```
 
+</details>
+     
 ***Scripts of pre-training iTPN-B using CLIP-L:***
 ```bash
 python startup_clip.py \
