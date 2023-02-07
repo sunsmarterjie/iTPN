@@ -21,8 +21,8 @@ args, unparsed = parser.parse_known_args()
 
 #######################################################################################################
 
-cmd_str = f"python -m torch.distributed.launch --nproc_per_node {args.num_gpus} \
-    --nnodes={args.world_size} main_pretrain.py --batch_size {args.batch_size} --epochs {args.epochs} \
+cmd_str = f"python -m torch.distributed.launch --nnodes={args.world_size} --nproc_per_node={args.num_gpus} \
+    --node_rank={args.rank} --master_addr={} main_pretrain.py --batch_size {args.batch_size} --epochs {args.epochs} \
     --model {args.model} --warmup_epochs {args.warmup_epochs} --mask_ratio {args.mask_ratio} \
     --blr {args.blr} --data_path {args.data_path}"
 
