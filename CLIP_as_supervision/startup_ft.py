@@ -67,7 +67,7 @@ cmd_str = f"python -m torch.distributed.launch \
     --node_rank={modelarts_rank} \
     --master_addr={master_addr} \
     --master_port={master_port} \
-    run_class_finetuning_tpn.py  \
+    run_itpn_finetuning.py  \
     --data_path ../imagenet/train \
     --eval_data_path ../imagenet/val \
     --nb_classes {args.nb_classes} \
