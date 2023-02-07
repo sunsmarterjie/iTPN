@@ -12,7 +12,7 @@ python startup_clip.py \
     --model clip_tpn_base_3324_patch16_224 \
     --beta 0.98 \
     --blr 1.5e-3 \
-    --clip_path ../path_to_clip_B \
+    --clip_path ../ViT-B-16.pt \
     --drop_path 0.1 \
     --epochs 300 \
     --input_size 224 \
@@ -20,6 +20,26 @@ python startup_clip.py \
     --opt_eps 1e-8 \
     --second_input_size 224 \
 ```
+ 
+ OR 
+
+```bash    
+python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NODE_RANK \
+    --master_addr=$MASTER_ADDR --master_port=6666  run_iTPN_clip.py \
+    --world_size 8 \
+    --batch_size 32 \
+    --model clip_tpn_base_3324_patch16_224 \
+    --beta 0.98 \
+    --blr 1.5e-3 \
+    --clip_path ../ViT-B-16.pt \
+    --drop_path 0.1 \
+    --epochs 300 \
+    --input_size 224 \
+    --layer_scale_init_value 0.1 \
+    --opt_eps 1e-8 \
+    --second_input_size 224 \
+```
+ 
 
 </details>
      
