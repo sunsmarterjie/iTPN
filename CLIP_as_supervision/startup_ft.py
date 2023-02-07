@@ -31,6 +31,8 @@ parser.add_argument('--clip_grad', type=float, default=5.0,
                     help='Clip gradient norm (default: None, no clipping)')
 parser.add_argument('--drop_path', type=float, default=.2,
                     help='Clip gradient norm (default: None, no clipping)')
+parser.add_argument('--weight_decay', type=float, default=0.05,
+                        help='weight decay (default: 0.05)')
 
 parser.add_argument('--num_gpus', type=int, default=8, help='the number of gpus')
 parser.add_argument('--rank', type=int, default=0, help='node rank')
