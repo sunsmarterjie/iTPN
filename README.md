@@ -14,16 +14,6 @@ Zhaozhi Wang<sup>1</sup>,
 [Qixiang Ye](https://scholar.google.com/citations?hl=zh-TW&user=tjEfgsEAAAAJ)<sup>1,3</sup>,
 
 <sup>1</sup> [University of Chinese Academy of Sciences](https://www.ucas.ac.cn/), <sup>2</sup> [Huawei Inc.](https://www.huawei.com/cn/?utm_source=corp_bdpz&utm_campaign=regular&utm_medium=cpc), <sup>3</sup> [Pengcheng Lab.](https://www.pcl.ac.cn/).
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/eva-exploring-the-limits-of-masked-visual/self-supervised-image-classification-with-2)](https://paperswithcode.com/sota/self-supervised-image-classification-with-2?p=eva-exploring-the-limits-of-masked-visual) \
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/eva-exploring-the-limits-of-masked-visual/self-supervised-image-classification-with-3)](https://paperswithcode.com/sota/self-supervised-image-classification-with-3?p=eva-exploring-the-limits-of-masked-visual) \
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/eva-exploring-the-limits-of-masked-visual/self-supervised-image-classification-with)](https://paperswithcode.com/sota/self-supervised-image-classification-with?p=eva-exploring-the-limits-of-masked-visual) \
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/eva-exploring-the-limits-of-masked-visual/instance-segmentation-on-coco)](https://paperswithcode.com/sota/instance-segmentation-on-coco?p=eva-exploring-the-limits-of-masked-visual) \
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/eva-exploring-the-limits-of-masked-visual/instance-segmentation-on-coco-minival)](https://paperswithcode.com/sota/instance-segmentation-on-coco-minival?p=eva-exploring-the-limits-of-masked-visual) \
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/eva-exploring-the-limits-of-masked-visual/object-detection-on-coco-minival)](https://paperswithcode.com/sota/object-detection-on-coco-minival?p=eva-exploring-the-limits-of-masked-visual) \
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/eva-exploring-the-limits-of-masked-visual/object-detection-on-coco)](https://paperswithcode.com/sota/object-detection-on-coco?p=eva-exploring-the-limits-of-masked-visual) \
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/eva-exploring-the-limits-of-masked-visual/semantic-segmentation-on-ade20k)](https://paperswithcode.com/sota/semantic-segmentation-on-ade20k?p=eva-exploring-the-limits-of-masked-visual) \
-
   
 ###  $\color{blue}{\text{This repo is being updated, and please stay tuned. All checkpoints will be released !}}$
 
