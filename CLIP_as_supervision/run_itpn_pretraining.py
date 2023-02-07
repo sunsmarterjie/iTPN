@@ -1,12 +1,11 @@
 # --------------------------------------------------------
 # Licensed under The MIT License [see LICENSE for details]
-# By Yunjie Tian
+# By Hangbo Bao
 # Based on BEiT, BEiT-v2, timm, DeiT and DINO code bases
 # https://github.com/microsoft/unilm/tree/master/beit
 # https://github.com/microsoft/unilm/tree/master/beitv2
 # https://github.com/rwightman/pytorch-image-models/tree/master/timm
 # https://github.com/facebookresearch/deit/
-# https://github.com/facebookresearch/dino
 # --------------------------------------------------------'
 
 import argparse
@@ -24,7 +23,7 @@ from timm.models import create_model
 from optim_factory import create_optimizer
 
 from datasets import build_beit_pretraining_dataset
-from engine_for_pretraining_itpn import train_one_epoch
+from engine_for_pretraining import train_one_epoch
 from utils import NativeScalerWithGradNormCount as NativeScaler
 import utils
 import modeling_pretrain
