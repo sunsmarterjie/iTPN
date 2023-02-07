@@ -3,8 +3,8 @@
 Official PyTorch implementation and pretrained models of [iTPN](https://arxiv.org/pdf/2211.12735.pdf) (CLIP as supervision).
 
 ***Scripts of pre-training iTPN-B using CLIP-B:***
-```bash
 
+```bash    
 python startup_clip.py \
     --world_size 8 \
     --batch_size 32 \
