@@ -2,7 +2,7 @@
 
 Official PyTorch implementation and pretrained models of [iTPN](https://arxiv.org/pdf/2211.12735.pdf) (CLIP as supervision).
 
-**iTPN Pre-Training: **
+## iTPN Pre-Training on ImageNet-1K: 
 
 <details>
  <summary> Pre-train <b>iTPN-B</b> using <b>CLIP-B</b>:</summary>
