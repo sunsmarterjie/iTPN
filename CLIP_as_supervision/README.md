@@ -309,7 +309,7 @@ python startup_ft.py \
     --epochs 50 \
     --input_size 256 \
     --layer_decay 0.55 \
-    --update_freq 2 \
+    --update_freq 1 \
     --warmup_epochs 5 \
     --mixup 0.8 \
     --cutmix  1.0 \
@@ -330,7 +330,7 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NO
     --epochs 50 \
     --input_size 256 \
     --layer_decay 0.55 \
-    --update_freq 2 \
+    --update_freq 1 \
     --warmup_epochs 5 \
     --mixup 0.8 \
     --cutmix  1.0 \
