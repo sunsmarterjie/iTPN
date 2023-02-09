@@ -218,7 +218,7 @@ python startup_ft.py \
     --model itpn_base_3324_patch16_224 \
     --blr 5.0e-4 \
     --weight ../path_to_checkpoint \
-    --drop_path 0.2 \
+    --drop_path 0.1 \
     --epochs 100 \
     --input_size 224 \
     --layer_decay 0.60 \
@@ -239,7 +239,7 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NO
     --model itpn_base_3324_patch16_224 \
     --blr 5.0e-4 \
     --weight ../path_to_checkpoint \
-    --drop_path 0.2 \
+    --drop_path 0.1 \
     --epochs 100 \
     --input_size 224 \
     --layer_decay 0.60 \
