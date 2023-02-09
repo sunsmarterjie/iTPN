@@ -43,7 +43,9 @@ The iTPN-L-CLIP/16 model reaches **89.2%** fine-tuning performance on ImageNet-1
 
 configurations: intermediate fine-tuning on ImageNet-21K + 384 input size
 
-**And HiViT is accepted by ICLR2023!**
+***21/Jan./2022***
+
+**Our HiViT is accepted by ICLR2023!**
 
 ***08/Dec./2022***
 
