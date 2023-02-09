@@ -45,7 +45,7 @@ configurations: intermediate fine-tuning on ImageNet-21K + 384 input size
 
 ***21/Jan./2022***
 
-**Our HiViT is accepted by ICLR2023!**
+**Our [HiViT](https://openreview.net/forum?id=3F6I-0-57SC) is accepted by ICLR2023!**
 
 ***08/Dec./2022***
 
@@ -113,9 +113,10 @@ iTPN is released under the [MIT License](https://github.com/sunsmarterjie/iTPN/b
 ```
 
 ```bash
-@inproceedings{zhanghivit,
-  title={HiViT: A Simpler and More Efficient Design of Hierarchical Vision Transformer},
-  author={Zhang, Xiaosong and Tian, Yunjie and Xie, Lingxi and Huang, Wei and Dai, Qi and Ye, Qixiang and Tian, Qi},
-  booktitle={International Conference on Learning Representations}
+@article{zhang2022hivit,
+  title={HiViT: Hierarchical Vision Transformer Meets Masked Image Modeling},
+  author={Zhang, Xiaosong and Tian, Yunjie and Huang, Wei and Ye, Qixiang and Dai, Qi and Xie, Lingxi and Tian, Qi},
+  journal={arXiv preprint arXiv:2205.14949},
+  year={2022}
 }
 ```
