@@ -37,6 +37,12 @@ Figure 1: On ImageNet-1K classification, iTPN shows significant advantages over 
 
 ## Updates
 
+***08/Feb./2022***
+
+The iTPN-L/16 model reaches **89.2%** fine-tuning performance on ImageNet-1K.
+
+configurations: intermediate fine-tuning on ImageNet-21K + 384 input size
+
 ***08/Dec./2022***
 
 Get checkpoints (password: abcd):
