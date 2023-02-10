@@ -36,8 +36,8 @@ parser.add_argument('--init_method', type=str, default='tcp://127.0.0.1:6666')
 args, unparsed = parser.parse_known_args()
 
 
-master_addr = args.init_method[:-5]
-master_port = args.init_method[-4:]
+master_addr = 'localhost'
+master_port = '12355'
 os.environ['MASTER_ADDR'] = master_addr
 os.environ['MASTER_PORT'] = master_port
 
