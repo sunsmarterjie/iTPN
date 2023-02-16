@@ -23,8 +23,8 @@ parser.add_argument('--world_size', type=int, default=8, help='how many machine 
 parser.add_argument('--init_method', type=str, default='tcp://127.0.0.1:6666')
 args, unparsed = parser.parse_known_args()
 
-master_addr = args.init_method[:-5]
-master_port = args.init_method[-4:]
+master_addr = MASTER_ADDR  # get your master_addr
+master_port = MASTER_PORT  # get your master_port
 os.environ['MASTER_ADDR'] = master_addr
 os.environ['MASTER_PORT'] = master_port
 
