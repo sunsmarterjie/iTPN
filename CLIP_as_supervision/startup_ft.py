@@ -41,8 +41,8 @@ parser.add_argument('--data_path', default='/cache/imagenet/', type=str,
                     help='dataset path')
 args, unparsed = parser.parse_known_args()
 
-master_addr = 'localhost'
-master_port = '12355'
+master_addr = MASTER_ADDR  # get your master_addr
+master_port = MASTER_PORT  # get your master_port
 os.environ['MASTER_ADDR'] = master_addr
 os.environ['MASTER_PORT'] = master_port
 
