@@ -1,7 +1,7 @@
 
 <div align="center">
 
-## [Integrally Pre-Trained Transformer Pyramid Networks](https://arxiv.org/pdf/2211.12735.pdf)
+## （CVPR2023） [Integrally Pre-Trained Transformer Pyramid Networks](https://arxiv.org/pdf/2211.12735.pdf)
 
 Yunjie Tian<sup>1</sup>,
 [Lingxi Xie](https://scholar.google.com/citations?user=EEMm7hwAAAAJ&hl=zh-TW&oi=ao)<sup>2</sup>, 
@@ -36,6 +36,10 @@ Figure 1: On ImageNet-1K classification, iTPN shows significant advantages over 
 
 
 ## Updates
+
+***28/Feb./2022***
+
+iTPN is accepted by CVPR2023!
 
 ***08/Feb./2022***
 
