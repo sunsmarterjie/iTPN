@@ -2,7 +2,6 @@
 
 ## Fine-tuning Pre-trained iTPN for Classification
 
-We will release the checkpoints [here](https://to_be_update).
 
 To fine-tune with **multi-node distributed training**, run the following on 4 nodes with 8 GPUs each.
 
