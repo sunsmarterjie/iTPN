@@ -19,7 +19,6 @@ model = dict(
         num_heads=8,
         fpn_dim=256,
         fpn_depth=1,
-        fpn_module_depth=2,
         num_outs=5,
         drop_path_rate=0.20,
         ape=True,
