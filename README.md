@@ -119,7 +119,7 @@ Table 2: Visual recognition results (%) on COCO and ADE20K. Mask R-CNN (abbr. MR
 
 
 ## License
-iTPN is released under the [MIT License](https://github.com/sunsmarterjie/iTPN/blob/main/LICENSE).
+iTPN is released under the [License](https://github.com/sunsmarterjie/iTPN/blob/main/LICENSE).
 
 ## Citation
 
