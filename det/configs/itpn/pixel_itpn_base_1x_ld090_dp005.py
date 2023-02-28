@@ -6,11 +6,6 @@ _base_ = [
 
 pretrained = '/cache/pretrain.pth'  # noqa
 
-# ==============================
-# Input shape: (3, 1280, 800)
-# Flops: 623.25 GFLOPs
-# Params: 99.39 M
-# ==============================
 model = dict(
     type='MaskRCNN',
     backbone=dict(
@@ -23,7 +18,6 @@ model = dict(
         mlp_depth=3,
         fpn_dim=256,
         fpn_depth=1,
-        fpn_module_depth=2,
         depth=24,
         num_heads=8,
         bridge_mlp_ratio=3.,
