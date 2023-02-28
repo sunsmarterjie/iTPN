@@ -39,7 +39,7 @@ Figure 1: On ImageNet-1K classification, iTPN shows significant advantages over 
 
 ***28/Feb./2022***
 
-iTPN is accepted by CVPR2023!
+**iTPN is accepted by CVPR2023!**
 
 ***08/Feb./2022***
 
