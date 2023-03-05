@@ -96,10 +96,6 @@ iTPN supports pre-training using pixel and CLIP as supervision. For the latter, 
 
 
 
-### Due to data privacy policy of Huawei Inc., the checkpoints are not availble temporarily. But we are applying for them and then release them recently. The checkpoints will be released [here](https://to_be_update).
-
-
-
 ## Main Results
 
 <p align="center">
