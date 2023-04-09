@@ -52,3 +52,6 @@ python -m torch.distributed.launch --nproc_per_node=8 \
     --eval bbox segm \
     --cfg-options model.backbone.use_checkpoint=True
 ```
+
+
+# You can run other experiments by simply changing the corresponding configs.
