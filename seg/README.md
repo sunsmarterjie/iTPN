@@ -1,4 +1,4 @@
 
-# The code for semantic segmentation will be released here.
+# The code for semantic segmentation with iTPN.
 
-Here will be cleaned soon 
+
