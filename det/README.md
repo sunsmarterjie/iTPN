@@ -1,3 +1,23 @@
-# The code for object detection will be released here.
+# The code for object detection and instance segmentation with iTPN.
 
-Here will be cleaned soon.
+# get started
+
+Please install [PyTorch](https://pytorch.org/). This codebase has been developed with python version 3.6, PyTorch version 1.7.1, CUDA 11.0 and torchvision 0.8.2. To get the full dependencies, please run:
+
+```bash
+conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=10.2 -c pytorch
+
+pip3 install -f https://download.openmmlab.com/mmcv/dist/cu102/torch1.8.0/index.html mmcv-full==1.5.1
+pip3 install pytest-runner scipy tensorboardX faiss-gpu==1.6.1 tqdm lmdb sklearn pyarrow==2.0.0 timm DALL-E munkres six einops
+
+# install apex
+pip3 install git+https://github.com/NVIDIA/apex \
+    --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext"
+
+# install mmdetection for object detection & instance segmentation
+git clone https://github.com/SwinTransformer/Swin-Transformer-Object-Detection
+cd Swin-Transformer-Object-Detection
+pip3 install -r requirements/build.txt
+pip3 install -v -e .
+cd ..
+```
