@@ -54,4 +54,4 @@ python -m torch.distributed.launch --nproc_per_node=8 \
 ```
 
 
-# You can run other experiments by simply changing the corresponding configs.
+### You can run other experiments by simply changing the corresponding configs.
