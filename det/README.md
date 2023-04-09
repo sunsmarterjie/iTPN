@@ -21,3 +21,23 @@ pip3 install -r requirements/build.txt
 pip3 install -v -e .
 cd ..
 ```
+
+## Fine-tuning with Mask R-CNN
+#### We use 32 V100 GPUs, $NNODES = 4.
+
+- To train iTPN-B/16 with Mask R-CNN:
+```bash
+python -m torch.distributed.launch --nproc_per_node=8 \
+    --nnodes=$NNODES \
+    --node_rank=$RANK \
+    --master_addr=$ADDRESS \
+    --master_port=$PORT \
+    tools/train.py 
+    ./configs/itpn/pixel_itpn_base_1x_ld090_dp005.py \
+    --launcher pytorch \
+    --work-dir $OUTPUT_DIR \
+    --no-validate \
+    --deterministic \
+    --cfg-options model.backbone.use_checkpoint=True \
+    model.init_cfg['pretrained']=$PRETRAINED \
+```
