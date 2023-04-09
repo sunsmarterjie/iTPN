@@ -58,7 +58,7 @@ configurations: intermediate fine-tuning on ImageNet-21K + 384 input size
 Get checkpoints (password: abcd):
 | |iTPN-B-pixel | iTPN-B-CLIP | iTPN-L-pixel | iTPN-L-CLIP/16|
 | :---: | :---: |:---: |:---: |:---: |
-|  baidu drive |[download](https://pan.baidu.com/s/17dBwYpDugDHPDDf44uI-5A)|[download](https://pan.baidu.com/s/1__LnTBBYzpvVEmGZFt7nFw)|[download](https://pan.baidu.com/s/1AHnWHQIQ1SO90UaWPnmYUw)|[download](https://pan.baidu.com/s/1Gu-I3Z-25GFsfB31MQ_xZg)|
+|  baidu drive |[download](https://pan.baidu.com/s/1DjT2qtwGX5Kg1sU5kKlfEw)|[download](https://pan.baidu.com/s/1__LnTBBYzpvVEmGZFt7nFw)|[download](https://pan.baidu.com/s/1AHnWHQIQ1SO90UaWPnmYUw)|[download](https://pan.baidu.com/s/1Gu-I3Z-25GFsfB31MQ_xZg)|
 | google drive  |[download](https://drive.google.com/file/d/1TYCaepVflm0xMrQefG5Sj4ityXYbJLFt/view?usp=share_link)|[download](https://drive.google.com/file/d/1H51Zusrvlj8RjcWA7yuUyeqaVhmndSeN/view?usp=share_link)|[download](https://drive.google.com/file/d/1TYCaepVflm0xMrQefG5Sj4ityXYbJLFt/view?usp=share_link)|[download](https://drive.google.com/file/d/1gyyjcdMvAQsz2xC7ei-rEd7G4po2spy4/view?usp=share_link)|
 
 
