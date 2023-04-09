@@ -41,3 +41,14 @@ python -m torch.distributed.launch --nproc_per_node=8 \
     --cfg-options model.backbone.use_checkpoint=True \
     model.init_cfg['checkpoint']=$PRETRAINED \
 ```
+
+- To evaluate Mask R-CNN:
+```bash
+python -m torch.distributed.launch --nproc_per_node=8 \
+    ./tools/test.py \
+    $CONFIG \
+    $checkpoint # from pretrained above \
+    --launcher pytorch \
+    --eval bbox segm \
+    --cfg-options model.backbone.use_checkpoint=True
+```
