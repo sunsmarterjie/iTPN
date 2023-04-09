@@ -2,7 +2,7 @@
 
 # get started
 
-Please install [PyTorch](https://pytorch.org/). This codebase has been developed with python version 3.6, PyTorch version 1.7.1, CUDA 11.0 and torchvision 0.8.2. To get the full dependencies, please run:
+Please install [PyTorch](https://pytorch.org/). This codebase has been developed with python version 3.7, PyTorch version 1.8.0, CUDA 10.2 and torchvision 0.9.0. To get the full dependencies, please run:
 
 ```bash
 conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=10.2 -c pytorch
