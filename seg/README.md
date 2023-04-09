@@ -24,3 +24,14 @@ bash tools/dist_train.sh \
     --work-dir /path/to/save --seed 0  --deterministic \
     --options model.pretrained=<PRETRAIN_CHECKPOINT_PATH>
 ```
+
+
+## Eval the fine-tuned checkpoints
+
+```bash
+bash tools/dist_test.sh \
+    ./configs/itpn/pixel_upernet_itpn_base_12_512_slide_160k_ade20k_pt2ft.py \
+    <FINETUNED_CHECKPOINT_PATH> 8 \
+    --eval mIoU
+```
+
