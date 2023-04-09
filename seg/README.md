@@ -35,3 +35,5 @@ bash tools/dist_test.sh \
     --eval mIoU
 ```
 
+
+### You can run other experiments by simply using the corresponding configs.
