@@ -1,3 +1,3 @@
 
 
-## The much faster iTPNs required less memory will come here !
+## The faster and more memory-saving iTPNs will come here !
