@@ -173,7 +173,7 @@ class iTPN_pixel(nn.Module):
                  mlp_depth2=3, depth=20, fpn_dim=256, num_heads=8, bridge_mlp_ratio=3., mlp_ratio=4., fpn_depth=2,
                  qkv_bias=True, qk_scale=None, drop_rate=0., attn_drop_rate=0., drop_path_rate=0.0,
                  norm_layer=nn.LayerNorm, ape=True, rpe=True, patch_norm=True, use_checkpoint=False,
-                 num_outs=-1,
+                 num_outs=-1, init_cfg=None,
                  **kwargs):
         super().__init__()
         assert num_outs in [-1, 1, 2, 3, 4, 5]
