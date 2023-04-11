@@ -82,14 +82,7 @@ class BlockWithRPE(nn.Module):
 
     def forward(self, x, rpe_index=None, mask=None):
         if self.attn is not None:
-            if self.merge_att and False:
-                B, N, H, W, C = x.shape
-                x = x.view(B, N, -1)
-                x = x + self.drop_path(self.attn(self.norm1(x), rpe_index, mask))
-                x = x.reshape(B, N, H, W, C)
-            else:
-                x = x + self.drop_path(self.attn(self.norm1(x), rpe_index, mask))
-        #print('x:', x.shape)
+            x = x + self.drop_path(self.attn(self.norm1(x), rpe_index, mask))
         x = x + self.drop_path(self.mlp(self.norm2(x)))
         return x
 
