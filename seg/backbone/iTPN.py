@@ -269,7 +269,7 @@ class iTPN(nn.Module):
                     drop=drop_rate, attn_drop=attn_drop_rate, drop_path=0.,
                     rpe=rpe, norm_layer=norm_layer
                 ))
-        if self.num_outs > 1:
+            
             self.align_dim_16to8 = nn.Linear(mlvl_dims['8'], fpn_dim, bias=False)
             self.split_16to8 = PatchSplit(mlvl_dims['16'], fpn_dim, norm_layer)
             self.block_16to8 = nn.Sequential(
