@@ -66,7 +66,6 @@ class BlockWithRPE(nn.Module):
         self.dim = dim
         self.num_heads = num_heads
         self.mlp_ratio = mlp_ratio
-        self.merge_att = merge_att
 
         with_attn = num_heads > 0.
 
