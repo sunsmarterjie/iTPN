@@ -60,13 +60,11 @@ class Attention(nn.Module):
 
 class BlockWithRPE(nn.Module):
     def __init__(self, input_size, dim, num_heads=0., mlp_ratio=4., qkv_bias=True, qk_scale=None, init_values=None,
-                 drop=0., attn_drop=0., drop_path=0., rpe=True, act_layer=nn.GELU, norm_layer=nn.LayerNorm, factor=2,
-                 merge_att=False):
+                 drop=0., attn_drop=0., drop_path=0., rpe=True, act_layer=nn.GELU, norm_layer=nn.LayerNorm):
         super().__init__()
         self.dim = dim
         self.num_heads = num_heads
         self.mlp_ratio = mlp_ratio
-        self.merge_att = merge_att
 
         with_attn = num_heads > 0.
 
@@ -183,8 +181,7 @@ class iTPN(nn.Module):
     def __init__(self, img_size=512, patch_size=16, in_chans=3, num_classes=1000, embed_dim=512, mlp_depth1=3,
                  mlp_depth2=3, depth=24, fpn_dim=512, num_heads=8, bridge_mlp_ratio=3., mlp_ratio=4., fpn_depth=2,
                  init_values=None, qkv_bias=True, qk_scale=None, drop_rate=0., attn_drop_rate=0., drop_path_rate=0.0,
-                 norm_layer=nn.LayerNorm, ape=True, rpe=True, patch_norm=True, use_checkpoint=False,
-                 num_outs=4,
+                 norm_layer=nn.LayerNorm, ape=True, rpe=True, patch_norm=True, use_checkpoint=False, num_outs=4,
                  **kwargs):
         super().__init__()
         assert num_outs in [-1, 1, 2, 3, 4, 5]
