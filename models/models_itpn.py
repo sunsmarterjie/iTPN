@@ -169,10 +169,10 @@ class iTPN(nn.Module):
     def __init__(self, img_size=224, patch_size=16, in_chans=3, num_classes=1000, embed_dim=512, mlp_depth=3, depth=24,
                  fpn_dim=256, num_heads=8, bridge_mlp_ratio=3., mlp_ratio=4., fpn_depth=2, qkv_bias=True, qk_scale=None,
                  drop_rate=0., attn_drop_rate=0., drop_path_rate=0.0,  norm_layer=nn.LayerNorm, ape=True, rpe=True,
-                 patch_norm=True, use_checkpoint=False, num_outs=-1,
+                 patch_norm=True, use_checkpoint=False, num_outs=1,
                  **kwargs):
         super().__init__()
-        assert num_outs in [-1, 1, 2, 3, 4, 5]
+        assert num_outs in [1, 2, 3, 4, 5]
         self.num_classes = num_classes
         self.ape = ape
         self.rpe = rpe
@@ -292,7 +292,7 @@ class iTPN(nn.Module):
                 )
             )
 
-        if self.num_outs == -1:
+        if self.num_outs == 1:
             self.fc_norm = norm_layer(self.num_features)
             self.head = nn.Linear(self.num_features, num_classes) if num_classes > 0 else nn.Identity()
 
@@ -374,7 +374,7 @@ class iTPN(nn.Module):
 
         for blk in self.blocks[-self.num_main_blocks:]:
             x = checkpoint.checkpoint(blk, x, rpe_index, mask) if self.use_checkpoint else blk(x, rpe_index, mask)
-        if self.num_outs == -1:
+        if self.num_outs == 1:
             return x
 
         ##########################  FPN forward  ########################
@@ -414,13 +414,13 @@ class iTPN(nn.Module):
 def itpn_base(**kwargs):
     model = iTPN(
         embed_dim=512, mlp_depth=3, depth=24, num_heads=8, bridge_mlp_ratio=3., mlp_ratio=4.,
-        rpe=True, num_outs=-1, norm_layer=partial(nn.LayerNorm, eps=1e-6), **kwargs)
+        rpe=True, num_outs=1, norm_layer=partial(nn.LayerNorm, eps=1e-6), **kwargs)
     return model
 
 
 def itpn_large(**kwargs):
     model = iTPN(
         embed_dim=768, mlp_depth=2, depth=40, num_heads=12, bridge_mlp_ratio=3., mlp_ratio=4.,
-        rpe=True, num_outs=-1, norm_layer=partial(nn.LayerNorm, eps=1e-6), **kwargs)
+        rpe=True, num_outs=1, norm_layer=partial(nn.LayerNorm, eps=1e-6), **kwargs)
     return model
 
