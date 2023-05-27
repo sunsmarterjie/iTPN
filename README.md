@@ -122,11 +122,12 @@ iTPN is released under the [License](https://github.com/sunsmarterjie/iTPN/blob/
 ## Citation
 
 ```bash
-@article{tian2022integrally,
+@inproceedings{tian2023integrally,
   title={Integrally Pre-Trained Transformer Pyramid Networks},
   author={Tian, Yunjie and Xie, Lingxi and Wang, Zhaozhi and Wei, Longhui and Zhang, Xiaopeng and Jiao, Jianbin and Wang, Yaowei and Tian, Qi and Ye, Qixiang},
-  journal={arXiv preprint arXiv:2211.12735},
-  year={2022}
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={18610--18620},
+  year={2023}
 }
 ```
 
