@@ -14,8 +14,6 @@ Zhaozhi Wang<sup>1</sup>,
 [Qixiang Ye](https://scholar.google.com/citations?hl=zh-TW&user=tjEfgsEAAAAJ)<sup>1,3</sup>,
 
 <sup>1</sup> [University of Chinese Academy of Sciences](https://www.ucas.ac.cn/), <sup>2</sup> [Huawei Inc.](https://www.huawei.com/cn/?utm_source=corp_bdpz&utm_campaign=regular&utm_medium=cpc), <sup>3</sup> [Pengcheng Lab.](https://www.pcl.ac.cn/)
-  
-###  $\color{blue}{\text{This repo is being updated, and please stay tuned. All checkpoints will be released !}}$
 
   
 <p align="center">
