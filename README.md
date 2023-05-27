@@ -17,7 +17,7 @@ Zhaozhi Wang<sup>1</sup>,
 
   
 <p align="center">
-  <img src="figs/acc_comp.jpg" alt="iTPN" width="60%">
+  <img src="assets/acc_comp.jpg" alt="iTPN" width="60%">
 </p>
 <p align="center">
 Figure 1: On ImageNet-1K classification, iTPN shows significant advantages over prior methods, either only using pixel supervision (top) or leveraging knowledge from a pre-trained teacher (bottom, in the parentheses lies the name of teacher model)
@@ -97,14 +97,14 @@ iTPN supports pre-training using pixel and CLIP as supervision. For the latter, 
 ## Main Results
 
 <p align="center">
-  <img src="figs/ft_in1k.jpg" alt="iTPN" width="40%">
+  <img src="assets/ft_in1k.jpg" alt="iTPN" width="40%">
 </p>
 <p align="center">
 Table 1: Top-1 classification accuracy (%) by fine-tuning the pre-trained models on ImageNet-1K. We compare models of different levels and supervisions (e.g., with and without CLIP) separately.
 </p>
 
 <p align="center">
-  <img src="figs/ft_coco_ade.jpg" alt="iTPN" width="70%">
+  <img src="assets/ft_coco_ade.jpg" alt="iTPN" width="70%">
 </p>
 <p align="center">
 Table 2: Visual recognition results (%) on COCO and ADE20K. Mask R-CNN (abbr. MR, 1x/3x) and Cascade Mask R-CNN (abbr. CMR, 1x) are used on COCO, and UPerHead with 512x512 input is used on ADE20K. For the base-level models, each cell of COCO results contains object detection (box) and instance segmentation (mask) APs. For the large-level models, the accuracy of 1x Mask R-CNN surpasses all existing methods. 
