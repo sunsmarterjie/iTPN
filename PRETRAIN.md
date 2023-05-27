@@ -3,18 +3,6 @@
 ## Pre-training iTPN using pixel supervision
 
 To pre-train iTPN-B (recommended default) with **multi-node distributed training**, run the following on 8 nodes with 8 GPUs each:
-```bash
-python startup.py \
-    --world_size 8 \
-    --batch_size 64 \
-    --model itpn_base_dec512d8b \
-    --mask_ratio 0.75 \
-    --epochs 1600 \
-    --warmup_epochs 40 \
-    --blr 1.5e-4 --weight_decay 0.05 \
-    --data_path ${IMAGENET_DIR} \
-```
-OR
 
 ```bash
 python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NODE_RANK \
