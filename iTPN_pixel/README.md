@@ -1,6 +1,6 @@
-# [Integrally Pre-Trained Transformer Pyramid Networks](https://arxiv.org/abs/2106.08254)
+# [Integrally Pre-Trained Transformer Pyramid Networks](https://openaccess.thecvf.com/content/CVPR2023/papers/Tian_Integrally_Pre-Trained_Transformer_Pyramid_Networks_CVPR_2023_paper.pdf)
 
-Official PyTorch implementation and pretrained models of [iTPN](https://arxiv.org/pdf/2211.12735.pdf) (pixel as supervision).
+Official PyTorch implementation and pretrained models of [iTPN](https://openaccess.thecvf.com/content/CVPR2023/papers/Tian_Integrally_Pre-Trained_Transformer_Pyramid_Networks_CVPR_2023_paper.pdf) (pixel as supervision).
 
 ## iTPN Pre-Training on ImageNet-1K: 
 
