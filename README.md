@@ -4,7 +4,7 @@
 ## [CVPR2023] [Integrally Pre-Trained Transformer Pyramid Networks](https://openaccess.thecvf.com/content/CVPR2023/html/Tian_Integrally_Pre-Trained_Transformer_Pyramid_Networks_CVPR_2023_paper.html)
   
 <p align="center">
-  <img src="assets/framework.png" alt="iTPN" width="85%">
+  <img src="assets/framework.png" alt="iTPN" width="90%">
 </p>
 <p align="center">
 Figure 1: The comparison between a conventional pre-training (left) and the proposed integral pre-training framework (right). We use a
