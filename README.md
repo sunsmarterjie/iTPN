@@ -15,7 +15,7 @@ Zhaozhi Wang<sup>1</sup>,
 
   
 <p align="center">
-  <img src="assets/framework.png" alt="iTPN" width="60%">
+  <img src="assets/framework.png" alt="iTPN" width="80%">
 </p>
 <p align="center">
 Figure 1: On ImageNet-1K classification, iTPN shows significant advantages over prior methods, either only using pixel supervision (top) or leveraging knowledge from a pre-trained teacher (bottom, in the parentheses lies the name of teacher model)
