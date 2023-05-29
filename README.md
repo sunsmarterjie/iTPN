@@ -32,10 +32,10 @@ blocks indicate that the network weights are pre-trained and un-trained (i.e., r
 
 ***30/May/2023***
 
-|  | Pre-train | teacher | model| Acc on IN.1K |
+|  | Pre-train | teacher | input| Acc on IN.1K |
 | :---: | :---: |:---: |:---: |:---: |
-|  |
-| |
+|  EVA-02 | merged 30M|
+| Fast-iTPN|IN.1K|
 
 With 224 input size, Fast-iTPN-B/16 achieves **87.2%** on ImageNet-1K (vs. 87.0% of EVA-02). And with 512 input size, Fast-iTPN-B/16 achieves **88.4%** (vs. 88.3% of EVA-02). The ImageNet-21K intermediate fine-tuned model is on the way. All the models are only pre-trained on ImageNet-1K and these models will be available.
 
