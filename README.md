@@ -2,17 +2,6 @@
 <div align="center">
 
 ## [CVPR2023] [Integrally Pre-Trained Transformer Pyramid Networks](https://openaccess.thecvf.com/content/CVPR2023/html/Tian_Integrally_Pre-Trained_Transformer_Pyramid_Networks_CVPR_2023_paper.html)
-
-Yunjie Tian<sup>1</sup>,
-[Lingxi Xie](https://scholar.google.com/citations?user=EEMm7hwAAAAJ&hl=zh-TW&oi=ao)<sup>2</sup>, 
-Zhaozhi Wang<sup>1</sup>, 
-[Longhui Wei](https://scholar.google.com/citations?user=thhnAhIAAAAJ&hl=zh-TW&oi=ao)<sup>2</sup>,
-[Xiaopeng Zhang](https://scholar.google.com/citations?hl=zh-TW&user=Ud6aBAcAAAAJ)<sup>2</sup>,
-[Jianbin Jiao](https://scholar.google.com/citations?hl=zh-TW&user=XqdpqNcAAAAJ)<sup>1</sup>,
-[Yaowei Wang](https://scholar.google.com/citations?hl=zh-TW&user=o_DllmIAAAAJ)<sup>3</sup>,
-[Qi Tian](https://scholar.google.com/citations?hl=zh-TW&user=61b6eYkAAAAJ)<sup>2</sup>,
-[Qixiang Ye](https://scholar.google.com/citations?hl=zh-TW&user=tjEfgsEAAAAJ)<sup>1,3</sup>,
-
   
 <p align="center">
   <img src="assets/framework.png" alt="iTPN" width="85%">
