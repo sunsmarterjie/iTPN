@@ -30,17 +30,20 @@ blocks indicate that the network weights are pre-trained and un-trained (i.e., r
 
 ## Updates
 
-***28/Feb./2022***
+***30/May/2023***
+
+
+***28/Feb./2023***
 
 **iTPN is accepted by CVPR2023!**
 
-***08/Feb./2022***
+***08/Feb./2023***
 
 The iTPN-L-CLIP/16 model reaches **89.2%** fine-tuning performance on ImageNet-1K.
 
 configurations: intermediate fine-tuning on ImageNet-21K + 384 input size
 
-***21/Jan./2022***
+***21/Jan./2023***
 
 **Our HiViT is accepted by ICLR2023!**
 
