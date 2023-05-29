@@ -22,6 +22,8 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 4 \
     --data_path ${IMAGENET_DIR}
 ```
 
+***Script for iTPN-L:***
+
 ```bash
 python -m torch.distributed.launch --nnodes 4 --nproc_per_node=8 --nnodes 4 
     --node_rank=$NODE_RANK --master_addr=$MASTER_ADDR --master_port=6666 \
