@@ -32,7 +32,7 @@ blocks indicate that the network weights are pre-trained and un-trained (i.e., r
 
 ***30/May/2023***
 
-Our Fast-iTPN-B/16 achieves **87.2%** performance with only ImageNet-1K using 224 input size (vs. 87.0% of EVA-02). And with 512 input size, Fast-iTPN-B/16 achieves 88.4% performance (vs. 88.3% of EVA02). The ImageNet-21K intermediate fine-tuned model is on the way. All the models will be available.
+With 224 input size, Fast-iTPN-B/16 achieves **87.2%** using only ImageNet-1K (vs. 87.0% of EVA-02). And with 512 input size, Fast-iTPN-B/16 achieves **88.4%** (vs. 88.3% of EVA02). The ImageNet-21K intermediate fine-tuned model is on the way. All the models will be available.
 
 ***29/May/2023***
 
