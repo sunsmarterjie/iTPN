@@ -32,6 +32,7 @@ blocks indicate that the network weights are pre-trained and un-trained (i.e., r
 
 ***30/May/2023***
 
+The iTPN-L-CLIP/16 intermediate fine-tuned model is available (password:itpn) [pretrained on 21K](https://pan.baidu.com/s/1JF0_PRLth4SkiOeSjiKk2Q?pwd=itpn), and [fine-tuned model on 1K](https://pan.baidu.com/s/1TtV4kuW4nao7O1osNUxKhw?pwd=itpn).
 
 ***28/Feb./2023***
 
