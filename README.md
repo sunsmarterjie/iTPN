@@ -18,7 +18,9 @@ Zhaozhi Wang<sup>1</sup>,
   <img src="assets/framework.png" alt="iTPN" width="85%">
 </p>
 <p align="center">
-Figure 1: On ImageNet-1K classification, iTPN shows significant advantages over prior methods, either only using pixel supervision (top) or leveraging knowledge from a pre-trained teacher (bottom, in the parentheses lies the name of teacher model)
+Figure 1: The comparison between a conventional pre-training (left) and the proposed integral pre-training framework (right). We use a
+feature pyramid as the unified neck module, and apply masked feature modeling for pre-training the feature pyramid. The green and red
+blocks indicate that the network weights are pre-trained and un-trained (i.e., randomly initialized for fine-tuning), respectively.
 </p>
 
   
