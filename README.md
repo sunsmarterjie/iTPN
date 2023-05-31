@@ -26,7 +26,7 @@ blocks indicate that the network weights are pre-trained and un-trained (i.e., r
 |  EVA-02-B/14 | merged 30M|EVA-CLIP-g|196|N|87.0%|
 |  EVA-02-B/14 | merged 30M|EVA-CLIP-g|448|N|88.3%|
 |  EVA-02-B/14 | merged 30M|EVA-CLIP-g|448|Y|88.6%|
-| Fast-iTPN-B/16|IN.1K|CLIP-L|224|N|**87.2%**|
+| Fast-iTPN-B/16|IN.1K|CLIP-L|224|N|**87.3%**|
 | Fast-iTPN-B/16|IN.1K|CLIP-L|512|N|**88.4%**|
 | Fast-iTPN-B/16|IN.1K|CLIP-L|512|Y|on the way|
 
