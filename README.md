@@ -23,9 +23,9 @@ blocks indicate that the network weights are pre-trained and un-trained (i.e., r
 
 | model | Pre-train | teacher | input/patch | 21K ft? | Acc on IN.1K |
 | :---: | :---: |:---: |:---: |:---: |:---: |
-|  EVA-02-B | merged 30M|EVA-CLIP-g|196/14|N|87.0%|
-|  EVA-02-B | merged 30M|EVA-CLIP-g|448/14|N|88.3%|
-|  EVA-02-B | merged 30M|EVA-CLIP-g|448/14|Y|88.6%|
+|  EVA-02-B | IN.21K |EVA-CLIP-g|196/14|N|87.0%|
+|  EVA-02-B | IN.21K |EVA-CLIP-g|448/14|N|88.3%|
+|  EVA-02-B | IN.21K |EVA-CLIP-g|448/14|Y|88.6%|
 | Fast-iTPN-B|IN.1K |CLIP-L|224/16|N|**87.3%**|
 | Fast-iTPN-B|IN.1K |CLIP-L|512/16|N|**88.4%**|
 | Fast-iTPN-B|IN.1K |CLIP-L|512/16|Y|on the way|
