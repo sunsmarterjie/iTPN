@@ -28,7 +28,7 @@ blocks indicate that the network weights are pre-trained and un-trained (i.e., r
 |  EVA-02-B | IN.21K |EVA-CLIP-g|448/14|Y|88.6%|
 | Fast-iTPN-B|IN.1K |CLIP-L|224/16|N|**87.4%**|
 | Fast-iTPN-B|IN.1K |CLIP-L|512/16|N|**88.4%**|
-| Fast-iTPN-B|IN.1K |CLIP-L|512/16|Y|on the way|
+| Fast-iTPN-B|IN.1K |CLIP-L|512/16|Y|**88.6%**|
 
 All the models above are only pre-trained on ImageNet-1K and these models will be available soon.
 
