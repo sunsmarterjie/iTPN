@@ -23,7 +23,7 @@ pip install ./mmcv_full-1.5.1-cp37-cp37m-manylinux1_x86_64.whl
 
 # install apex
 # get my apex from:
-# baidu disk at https://pan.baidu.com/s/142qXu9tQMcynjd9AabqBeA?pwd=mmcv password:mmcv
+# baidu disk at https://pan.baidu.com/s/1HoxIVfYLv0SrJ02iu_qTNA?pwd=apex password:apex
 # or google drive at https://drive.google.com/file/d/16HDPDWg81LIP-3Q5MBy3XC7afjhA7dU6/view?usp=sharing
 # put the "apex" folder in the current directory
 cd apex
