@@ -32,7 +32,7 @@ python -m torch.distributed.launch --nproc_per_node=8 \
     --node_rank=$RANK \
     --master_addr=$ADDRESS \
     --master_port=$PORT \
-    tools/train.py 
+    ./tools/train.py  \
     ./configs/itpn/pixel_itpn_base_1x_ld090_dp005.py \
     --launcher pytorch \
     --work-dir $OUTPUT_DIR \
