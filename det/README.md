@@ -11,7 +11,7 @@ pip install pyyaml==5.1 mmpycocotools==12.0.3 einops torchvision==0.9.0 cython==
 pip install timm==0.5.4 pycocotools==2.0.4 numpy==1.21.5 terminaltables==3.1.10 six==1.16.0
 
 
-# install mmcv  --  get my [whl](https://pytorch.org/)/[whl](https://pytorch.org/)
+# install mmcv  --  get my whl from baidu disk:(https://pytorch.org/)/google drive: (https://pytorch.org/)
 pip install ./mmcv_full-1.5.1-cp37-cp37m-manylinux1_x86_64.whl
 
 # install apex
