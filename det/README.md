@@ -7,8 +7,9 @@ Please install [PyTorch](https://pytorch.org/). This codebase has been developed
 ```bash
 conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=10.2 -c pytorch
 
-pip3 install -f https://download.openmmlab.com/mmcv/dist/cu102/torch1.8.0/index.html mmcv-full==1.4.0
-pip3 install pytest-runner scipy tensorboardX faiss-gpu==1.6.1 tqdm lmdb sklearn pyarrow==2.0.0 timm DALL-E munkres six einops
+pip install pyyaml==5.1 mmpycocotools==12.0.3 einops torchvision==0.9.0 cython==0.29.28 
+pip install timm==0.5.4 pycocotools==2.0.4 numpy==1.21.5 terminaltables==3.1.10 six==1.16.0
+
 
 # install apex
 pip3 install git+https://github.com/NVIDIA/apex \
