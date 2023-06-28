@@ -12,7 +12,7 @@ pip install timm==0.5.4 pycocotools==2.0.4 numpy==1.21.5 terminaltables==3.1.10 
 
 
 # install mmcv  --  get my whl from baidu disk at https://pan.baidu.com/s/142qXu9tQMcynjd9AabqBeA?pwd=mmcv password:mmcv
-or google drive at https://drive.google.com/file/d/16HDPDWg81LIP-3Q5MBy3XC7afjhA7dU6/view?usp=sharing
+# or google drive at https://drive.google.com/file/d/16HDPDWg81LIP-3Q5MBy3XC7afjhA7dU6/view?usp=sharing
 pip install ./mmcv_full-1.5.1-cp37-cp37m-manylinux1_x86_64.whl
 
 # install apex
