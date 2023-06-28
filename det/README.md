@@ -11,16 +11,13 @@ pip install pyyaml==5.1 mmpycocotools==12.0.3 einops torchvision==0.9.0 cython==
 pip install timm==0.5.4 pycocotools==2.0.4 numpy==1.21.5 terminaltables==3.1.10 six==1.16.0
 
 
+# install mmcv
+pip install ./mmcv_full-1.5.1-cp37-cp37m-manylinux1_x86_64.whl
+
 # install apex
 pip3 install git+https://github.com/NVIDIA/apex \
     --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext"
 
-# install mmdetection for object detection & instance segmentation
-git clone https://github.com/SwinTransformer/Swin-Transformer-Object-Detection
-cd Swin-Transformer-Object-Detection
-pip3 install -r requirements/build.txt
-pip3 install -v -e .
-cd ..
 ```
 
 ## Fine-tuning with Mask R-CNN
