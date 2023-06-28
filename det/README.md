@@ -5,6 +5,9 @@
 Please install [PyTorch](https://pytorch.org/). This codebase has been developed with python version 3.7, PyTorch version 1.8.0, CUDA 10.2 and torchvision 0.9.0. To get the full dependencies, please run:
 
 ```bash
+conda create -n itpn_det python=3.7
+source activate itpn_det
+
 conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=10.2 -c pytorch
 
 pip install pyyaml==5.1 mmpycocotools==12.0.3 einops torchvision==0.9.0 cython==0.29.28 
