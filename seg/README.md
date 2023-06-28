@@ -6,6 +6,12 @@
 
 
 ```bash
+
+conda create -n itpn_det python=3.7
+source activate itpn_det
+
+conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=10.2 -c pytorch
+
 pip install mmcv-full==1.3.0 mmsegmentation==0.11.0
 pip install scipy timm==0.3.2
 
