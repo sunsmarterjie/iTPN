@@ -30,6 +30,9 @@ cd apex
 pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation --global-option="--cpp_ext" --global-option="--cuda_ext" ./
 cd ..
 
+
+python setup.py develop
+
 ```
 
 ## Fine-tuning with Mask R-CNN
