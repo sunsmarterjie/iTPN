@@ -15,9 +15,14 @@ conda install pytorch==1.8.0 torchvision==0.9.0 torchaudio==0.8.0 cudatoolkit=10
 pip install mmcv-full==1.3.0 mmsegmentation==0.11.0
 pip install scipy timm==0.3.2
 
-git clone https://github.com/NVIDIA/apex
+# install apex
+# get my apex from:
+# baidu disk at https://pan.baidu.com/s/1HoxIVfYLv0SrJ02iu_qTNA?pwd=apex password:apex
+# or google drive at https://drive.google.com/file/d/16HDPDWg81LIP-3Q5MBy3XC7afjhA7dU6/view?usp=sharing
+# put the "apex" folder in the current directory
 cd apex
-pip install -v --disable-pip-version-check --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+cd ..
 ```
 
 Follow [mmseg](https://github.com/open-mmlab/mmsegmentation/blob/master/docs/dataset_prepare.md) to prepare the ADE20k dataset.
