@@ -129,6 +129,9 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NO
     --master_addr=$MASTER_ADDR --master_port=6666  run_itpn_finetuning.py \
     --world_size 4 \
     --batch_size 32 \
+    --data_path ../path_to_data \
+    --nb_classes 1000 \
+    --output_dir  ../path_to_save  \
     --model itpn_base_3324_patch16_224 \
     --blr 5.0e-4 \
     --finetune ../path_to_checkpoint \
@@ -154,6 +157,9 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NO
     --master_addr=$MASTER_ADDR --master_port=6666  run_itpn_finetuning.py \
     --world_size 4 \
     --batch_size 16 \
+    --data_path ../path_to_data \
+    --nb_classes 1000 \
+    --output_dir  ../path_to_save  \
     --model itpn_large_2240_patch16_224 \
     --blr 2.0e-4 \
     --finetune ../path_to_checkpoint \
@@ -178,6 +184,9 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NO
     --master_addr=$MASTER_ADDR --master_port=6666  run_itpn_finetuning.py \
     --world_size 4 \
     --batch_size 16 \
+    --data_path ../path_to_data \
+    --nb_classes 1000 \
+    --output_dir  ../path_to_save  \
     --model itpn_large_2240_patch16_256 \
     --blr 2.0e-4 \
     --finetune ../path_to_checkpoint \
