@@ -463,8 +463,6 @@ def main(args, ds_init):
                 utils.save_model(
                     args=args, model=model, model_without_ddp=model_without_ddp, optimizer=optimizer,
                     loss_scaler=loss_scaler, epoch=epoch, model_ema=model_ema, save_ckpt_freq=args.save_ckpt_freq)
-            if (epoch + 1) % args.save_ckpt_freq == 0 or epoch + 1 == args.epochs:
-                mox.file.copy_parallel(args.output_dir, args.s3_path)
 
         if data_loader_val is not None:
             test_stats = evaluate(data_loader_val, model, device, debug=args.debug)
