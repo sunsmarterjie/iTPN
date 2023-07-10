@@ -11,6 +11,9 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 4 \
     main_finetune.py \
     --world_size 4 \
     --batch_size 32 \
+    --data_path ./path_to_data \
+    --nb_classes 1000 \
+    --output_dir  ../path_to_save \
     --model itpn_base \
     --finetune ${PRETRAIN_CHKPT} \
     --epochs 100 \
@@ -30,6 +33,9 @@ python -m torch.distributed.launch --nnodes 4 --nproc_per_node=8 --nnodes 4
     main_finetune.py \
     --world_size 4 \
     --batch_size 32 \
+    --data_path ./path_to_data \
+    --nb_classes 1000 \
+    --output_dir  ../path_to_save \
     --model itpn_large \
     --finetune ${PRETRAIN_CHKPT} \
     --epochs 50 \
