@@ -343,7 +343,7 @@ class iTPN(nn.Module):
 
         for blk in self.blocks[-self.num_main_blocks:]:
             x = checkpoint.checkpoint(blk, x, rpe_index) if self.use_checkpoint else blk(x, rpe_index)
-            return x
+        return x
 
         #############  FPN is only used for downstrean tasks such as detection/segmentation  ##############
         #############             Here we only define model for classification               ##############
