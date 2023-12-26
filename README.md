@@ -32,7 +32,7 @@ blocks indicate that the network weights are pre-trained and un-trained (i.e., r
 | Fast-iTPN-B| 85 | IN.1K |CLIP-L|512/16|Y|**88.7%**| | |
 | Fast-iTPN-L| 312 |IN.1K |CLIP-L|512/16|Y|**88.7%**| | |
 
-All the pre-trained Fast-iTPN models are available now!
+All the pre-trained Fast-iTPN models are available now! The tiny/small/base scale models report the best performance on ImageNet-1K as far as we know.
 
 ***30/May/2023***
 
