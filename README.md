@@ -36,7 +36,7 @@ blocks indicate that the network weights are pre-trained and un-trained (i.e., r
 | Fast-iTPN-B| 85 | IN.1K |CLIP-L|512/16|Y|**88.75%**|[baidu]()/[google]() | N/A |
 | Fast-iTPN-L| 312 |IN.1K |CLIP-L|640/16|N|**89.5%**|[baidu]()/[google]() | N/A |
 
-All the pre-trained Fast-iTPN models are available now! The tiny/small/base scale models report the best performance on ImageNet-1K as far as we know. Use them for your own tasks!
+All the pre-trained Fast-iTPN models are available now! * The tiny/small/base scale models report the best performance on ImageNet-1K as far as we know.* Use them for your own tasks!
 
 ***30/May/2023***
 
