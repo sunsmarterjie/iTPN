@@ -3,7 +3,7 @@
 
 ## [CVPR2023] [Integrally Pre-Trained Transformer Pyramid Networks](https://openaccess.thecvf.com/content/CVPR2023/html/Tian_Integrally_Pre-Trained_Transformer_Pyramid_Networks_CVPR_2023_paper.html)
 
-# (A Hierarchical Vision Transformer for Masked Image Modeling)
+### (A Hierarchical Vision Transformer for Masked Image Modeling)
   
 <p align="center">
   <img src="assets/framework.png" alt="iTPN" width="90%">
