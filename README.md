@@ -19,6 +19,17 @@ blocks indicate that the network weights are pre-trained and un-trained (i.e., r
 
 ## Updates
 
+***26/Nov./2023***
+
+| model | Para. (M) | Pre-train | teacher | input/patch | 21K ft? | Acc on IN.1K | checkpoint | checkpoint (21K)|
+| :---: | :---: |:---: |:---: |:---: |:---: |
+| Fast-iTPN-T| 24 |IN.1K |CLIP-L|224/16|N|**85.1%**| | |
+| Fast-iTPN-T| 24 |IN.1K |CLIP-L|384/16|N|**86.2%**| | |
+| Fast-iTPN-T| 24 |IN.1K |CLIP-L|512/16|N|**86.5%**| | |
+| Fast-iTPN-S| 40 |IN.1K |CLIP-L|512/16|N|**88.5%**| | |
+| Fast-iTPN-B| 85 | IN.1K |CLIP-L|512/16|Y|**88.7%**| | |
+| Fast-iTPN-L| 312 |IN.1K |CLIP-L|512/16|Y|**88.7%**| | |
+
 ***30/May/2023***
 
 | model | Pre-train | teacher | input/patch | 21K ft? | Acc on IN.1K |
