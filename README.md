@@ -32,6 +32,8 @@ blocks indicate that the network weights are pre-trained and un-trained (i.e., r
 | Fast-iTPN-B| 85 | IN.1K |CLIP-L|512/16|Y|**88.7%**| | |
 | Fast-iTPN-L| 312 |IN.1K |CLIP-L|512/16|Y|**88.7%**| | |
 
+All the pre-trained Fast-iTPN models are available now!
+
 ***30/May/2023***
 
 | model | Pre-train | teacher | input/patch | 21K ft? | Acc on IN.1K |
