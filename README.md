@@ -31,7 +31,7 @@ blocks indicate that the network weights are pre-trained and un-trained (i.e., r
 | Fast-iTPN-S| 40 |IN.1K |CLIP-L|224/16|N|**86.4%**|[baidu](https://pan.baidu.com/s/1aovyWpsQqB-V5M3OXoVCMA?pwd=itpn)/[google]() |  |
 | Fast-iTPN-S| 40 |IN.1K |CLIP-L|384/16|N|**86.95%**| | |
 | Fast-iTPN-S| 40 |IN.1K |CLIP-L|512/16|N|**87.8%**| | |
-| Fast-iTPN-B| 85 | IN.1K |CLIP-L|224/16|N|**87.4%**|[baidu](https://pan.baidu.com/s/1R-FfMAx-wmIUSJR-JUVnVw?pwd=itpn)/[google]() |  |
+| Fast-iTPN-B| 85 | IN.1K |CLIP-L|224/16|N|**87.4%**|[baidu](https://pan.baidu.com/s/1R-FfMAx-wmIUSJR-JUVnVw?pwd=itpn)/[google](https://drive.google.com/file/d/1ADXPV95XpWb1ROMCih1n3AD52fGdr8C_/view?usp=sharing) |  |
 | Fast-iTPN-B| 85 | IN.1K |CLIP-L|512/16|N|**88.5%**| | |
 | Fast-iTPN-B| 85 | IN.1K |CLIP-L|512/16|Y|**88.75%**| | [baidu](https://pan.baidu.com/s/1kkX2E5Z4VwQ4joYvLyebnQ?pwd=itpn)/[google]() |
 | Fast-iTPN-L| 312 |IN.1K |CLIP-L|640/16|N|**89.5%**|[baidu](https://pan.baidu.com/s/1wbnbBkjHIUgHS_1okxMHCg?pwd=itpn)/[google]() | |
