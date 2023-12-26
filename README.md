@@ -33,7 +33,7 @@ blocks indicate that the network weights are pre-trained and un-trained (i.e., r
 | Fast-iTPN-S| 40 |IN.1K |CLIP-L|512/16|N|**87.8%**| | |
 | Fast-iTPN-B| 85 | IN.1K |CLIP-L|224/16|N|**87.4%**|[baidu](https://pan.baidu.com/s/1R-FfMAx-wmIUSJR-JUVnVw?pwd=itpn)/[google](https://drive.google.com/file/d/1ADXPV95XpWb1ROMCih1n3AD52fGdr8C_/view?usp=sharing) |  |
 | Fast-iTPN-B| 85 | IN.1K |CLIP-L|512/16|N|**88.5%**| | |
-| Fast-iTPN-B| 85 | IN.1K |CLIP-L|512/16|Y|**88.75%**| | [baidu](https://pan.baidu.com/s/1kkX2E5Z4VwQ4joYvLyebnQ?pwd=itpn)/[google]() |
+| Fast-iTPN-B| 85 | IN.1K |CLIP-L|512/16|Y|**88.75%**| | [baidu](https://pan.baidu.com/s/1kkX2E5Z4VwQ4joYvLyebnQ?pwd=itpn)/[google](https://drive.google.com/file/d/1ddGbBm46FiUdNs9HPSepokhuOKhEnBdV/view?usp=sharing) |
 | Fast-iTPN-L| 312 |IN.1K |CLIP-L|640/16|N|**89.5%**|[baidu](https://pan.baidu.com/s/1wbnbBkjHIUgHS_1okxMHCg?pwd=itpn)/[google]() | |
 
 All the pre-trained Fast-iTPN models are available now (passward: itpn) ! **The tiny/small/base scale models report the best performance on ImageNet-1K as far as we know.** Use them for your own tasks!
