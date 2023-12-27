@@ -17,6 +17,23 @@
 The Fast-iTPN series exclusively utilizes ImageNet-1K for training and, to the best of our knowledge, achieves superior performance in tiny/small/base-scale models.
 
 
+## Main Results
+
+<p align="center">
+  <img src="assets/fast_tiny_small_in1k.png" alt="Fast_iTPN" width="50%">
+</p>
+<p align="center">
+Table 1: Fast_iTPN_tiny/small top-1 classification accuracy on ImageNet-1K.
+</p>
+
+<p align="center">
+  <img src="assets/fast_base_large_in1k.png" alt="Fast_iTPN" width="50%">
+</p>
+<p align="center">
+Table 2: Fast_iTPN_base/large top-1 classification accuracy on ImageNet-1K.
+</p>
+
+
 ## Fast_iTPN Fine-Tuning on ImageNet-1K: 
 
 <details>
