@@ -6,34 +6,34 @@
  <summary> Fine-tune <b>Fast_iTPN-tiny</b>:</summary>
 
 ```bash    
-NNODES=1
-GPUS=2
-CLASSES=100
-INPUT_SIZE=224
+NNODES=2
+GPUS=8
+CLASSES=1000
+INPUT_SIZE=224  # 384/512
 WEIGHT_DECAY=0.05
-BATCH_SIZE=32
+BATCH_SIZE=64
 LAYER_SCALE_INIT_VALUE=0.1
-LR=5e-4
+LR=1e-4
 UPDATE_FREQ=1
 REPROB=0.25
-EPOCHS=50
+EPOCHS=100
 W_EPOCHS=5
-LAYER_DECAY=0.75
+LAYER_DECAY=0.80
 MIN_LR=1e-6
 WARMUP_LR=1e-6
 DROP_PATH=0.1
 MIXUP=0.8
 CUTMIX=1.0
 SMOOTHING=0.1
-MODEL='fast_itpn_large_2240_patch16_256'
-WEIGHT='/home/TangXi/Workspace/fast_itpn_large_1600e_1k.pt'
+MODEL='fast_itpn_tiny_1112_patch16_224'
+WEIGHT='../fast_itpn_tiny_1600e_1k.pt'
 
-cmd_str = f"python -m torch.distributed.launch \
+python -m torch.distributed.launch \
     --nproc_per_node {GPUS} \
     --nnodes={NNODES} \
     run_class_finetuning.py  \
-    --data_path /home/TangXi/Dataset/ILSVRC2012_split_100/train \
-    --eval_data_path /home/TangXi/Dataset/ILSVRC2012_split_100/val \
+    --data_path /PATH/TO/IN1K/train \
+    --eval_data_path /PATH/TO/IN1K/val \
     --nb_classes {CLASSES} \
     --data_set image_folder \
     --output_dir ./output \
@@ -61,7 +61,6 @@ cmd_str = f"python -m torch.distributed.launch \
     --model_ema \
     --model_ema_eval \
     --save_ckpt_freq 20 \
-"
 ```
 </details>
 
