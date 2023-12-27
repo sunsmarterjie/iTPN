@@ -61,10 +61,15 @@ CUTMIX=1.0
 SMOOTHING=0.1
 MODEL='fast_itpn_tiny_1112_patch16_224'
 WEIGHT='../fast_itpn_tiny_1600e_1k.pt'
+NODE_RANK=your_node_rank
+MASTER_ADDR=your_master_addr
 
 python -m torch.distributed.launch \
     --nproc_per_node {GPUS} \
     --nnodes={NNODES} \
+    --node_rank={NODE_RANK} \
+    --master_addr={MASTER_ADDR} \
+    --master_port=6666 \
     run_class_finetuning.py  \
     --data_path /PATH/TO/IN1K/train \
     --eval_data_path /PATH/TO/IN1K/val \
@@ -125,10 +130,15 @@ CUTMIX=1.0
 SMOOTHING=0.1
 MODEL='fast_itpn_small_2220_patch16_224'
 WEIGHT='../fast_itpn_small_1600e_1k.pt'
+NODE_RANK=your_node_rank
+MASTER_ADDR=your_master_addr
 
 python -m torch.distributed.launch \
     --nproc_per_node {GPUS} \
     --nnodes={NNODES} \
+    --node_rank={NODE_RANK} \
+    --master_addr={MASTER_ADDR} \
+    --master_port=6666 \
     run_class_finetuning.py  \
     --data_path /PATH/TO/IN1K/train \
     --eval_data_path /PATH/TO/IN1K/val \
@@ -189,10 +199,15 @@ CUTMIX=1.0
 SMOOTHING=0.1
 MODEL='fast_itpn_base_3324_patch16_224'
 WEIGHT='../fast_itpn_base_clipl_e1600.pt'  
+NODE_RANK=your_node_rank
+MASTER_ADDR=your_master_addr
 
 python -m torch.distributed.launch \
     --nproc_per_node {GPUS} \
     --nnodes={NNODES} \
+    --node_rank={NODE_RANK} \
+    --master_addr={MASTER_ADDR} \
+    --master_port=6666 \
     run_class_finetuning.py  \
     --data_path /PATH/TO/IN1K/train \
     --eval_data_path /PATH/TO/IN1K/val \
@@ -254,10 +269,15 @@ CUTMIX=1.0
 SMOOTHING=0.1
 MODEL='fast_itpn_large_3324_patch16_224'
 WEIGHT='../fast_itpn_base_1600e_1k.pt'  
+NODE_RANK=your_node_rank
+MASTER_ADDR=your_master_addr
 
 python -m torch.distributed.launch \
     --nproc_per_node {GPUS} \
     --nnodes={NNODES} \
+    --node_rank={NODE_RANK} \
+    --master_addr={MASTER_ADDR} \
+    --master_port=6666 \
     run_class_finetuning.py  \
     --data_path /PATH/TO/IN1K/train \
     --eval_data_path /PATH/TO/IN1K/val \
