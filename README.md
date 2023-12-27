@@ -21,7 +21,7 @@ blocks indicate that the network weights are pre-trained and un-trained (i.e., r
 
 ## Updates
 
-***26/Nov./2023***
+***26/Dec./2023***
 
 | model | Para. (M) | Pre-train | teacher | input/patch | 21K ft? | Acc on IN.1K | checkpoint | checkpoint (21K)|
 | :---: | :---: |:---: |:---: |:---: |:---: | :---: | :---: | :---: |
