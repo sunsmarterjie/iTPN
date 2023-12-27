@@ -14,6 +14,8 @@
 | Fast-iTPN-B| 85 | IN.1K |CLIP-L|512/16|Y|**88.75%**| | [baidu](https://pan.baidu.com/s/1kkX2E5Z4VwQ4joYvLyebnQ?pwd=itpn)/[google](https://drive.google.com/file/d/1ddGbBm46FiUdNs9HPSepokhuOKhEnBdV/view?usp=sharing) |
 | Fast-iTPN-L| 312 |IN.1K |CLIP-L|640/16|N|**89.5%**|[baidu](https://pan.baidu.com/s/1wbnbBkjHIUgHS_1okxMHCg?pwd=itpn)/[google](https://drive.google.com/file/d/16uybbJ23Fp7lnGNYL5I198glHGhwn_y2/view?usp=sharing) | |
 
+The Fast-iTPN series exclusively utilizes ImageNet-1K for training and, to the best of our knowledge, achieves superior performance in tiny/small/base-scale models.
+
 
 ## Fast_iTPN Fine-Tuning on ImageNet-1K: 
 
