@@ -65,36 +65,36 @@ NODE_RANK=your_node_rank
 MASTER_ADDR=your_master_addr
 
 python -m torch.distributed.launch \
-    --nproc_per_node {GPUS} \
-    --nnodes={NNODES} \
-    --node_rank={NODE_RANK} \
-    --master_addr={MASTER_ADDR} \
+    --nproc_per_node ${GPUS} \
+    --nnodes=${NNODES} \
+    --node_rank=${NODE_RANK} \
+    --master_addr=${MASTER_ADDR} \
     --master_port=6666 \
     run_class_finetuning.py  \
     --data_path /PATH/TO/IN1K/train \
     --eval_data_path /PATH/TO/IN1K/val \
-    --nb_classes {CLASSES} \
+    --nb_classes ${CLASSES} \
     --data_set image_folder \
     --output_dir ./output \
-    --input_size {INPUT_SIZE} \
+    --input_size ${INPUT_SIZE} \
     --log_dir ./output \
-    --model {MODEL} \
-    --weight_decay {WEIGHT_DECAY}  \
-    --finetune {WEIGHT}  \
-    --batch_size {BATCH_SIZE}  \
-    --layer_scale_init_value {LAYER_SCALE_INIT_VALUE} \
-    --lr {LR} \
-    --update_freq {UPDATE_FREQ}  \
-    --reprob {REPROB} \
-    --warmup_epochs {W_EPOCHS} \
-    --epochs {EPOCHS}  \
-    --layer_decay {LAYER_DECAY} \
-    --min_lr {MIN_LR} \
-    --warmup_lr {WARMUP_LR} \
-    --drop_path {DROP_PATH}  \
-    --mixup {MIXUP} \
-    --cutmix {CUTMIX} \
-    --smoothing {SMOOTHING} \
+    --model ${MODEL} \
+    --weight_decay ${WEIGHT_DECAY}  \
+    --finetune ${WEIGHT}  \
+    --batch_size ${BATCH_SIZE}  \
+    --layer_scale_init_value ${LAYER_SCALE_INIT_VALUE} \
+    --lr ${LR} \
+    --update_freq ${UPDATE_FREQ}  \
+    --reprob ${REPROB} \
+    --warmup_epochs ${W_EPOCHS} \
+    --epochs ${EPOCHS}  \
+    --layer_decay ${LAYER_DECAY} \
+    --min_lr ${MIN_LR} \
+    --warmup_lr ${WARMUP_LR} \
+    --drop_path ${DROP_PATH}  \
+    --mixup ${MIXUP} \
+    --cutmix ${CUTMIX} \
+    --smoothing ${SMOOTHING} \
     --imagenet_default_mean_and_std   \
     --dist_eval \
     --model_ema \
@@ -134,36 +134,36 @@ NODE_RANK=your_node_rank
 MASTER_ADDR=your_master_addr
 
 python -m torch.distributed.launch \
-    --nproc_per_node {GPUS} \
-    --nnodes={NNODES} \
-    --node_rank={NODE_RANK} \
-    --master_addr={MASTER_ADDR} \
+    --nproc_per_node ${GPUS} \
+    --nnodes=${NNODES} \
+    --node_rank=${NODE_RANK} \
+    --master_addr=${MASTER_ADDR} \
     --master_port=6666 \
     run_class_finetuning.py  \
     --data_path /PATH/TO/IN1K/train \
     --eval_data_path /PATH/TO/IN1K/val \
-    --nb_classes {CLASSES} \
+    --nb_classes ${CLASSES} \
     --data_set image_folder \
     --output_dir ./output \
-    --input_size {INPUT_SIZE} \
+    --input_size ${INPUT_SIZE} \
     --log_dir ./output \
-    --model {MODEL} \
+    --model ${MODEL} \
     --weight_decay {WEIGHT_DECAY}  \
-    --finetune {WEIGHT}  \
-    --batch_size {BATCH_SIZE}  \
-    --layer_scale_init_value {LAYER_SCALE_INIT_VALUE} \
+    --finetune ${WEIGHT}  \
+    --batch_size ${BATCH_SIZE}  \
+    --layer_scale_init_value ${LAYER_SCALE_INIT_VALUE} \
     --lr {LR} \
-    --update_freq {UPDATE_FREQ}  \
-    --reprob {REPROB} \
-    --warmup_epochs {W_EPOCHS} \
-    --epochs {EPOCHS}  \
-    --layer_decay {LAYER_DECAY} \
-    --min_lr {MIN_LR} \
-    --warmup_lr {WARMUP_LR} \
-    --drop_path {DROP_PATH}  \
-    --mixup {MIXUP} \
-    --cutmix {CUTMIX} \
-    --smoothing {SMOOTHING} \
+    --update_freq ${UPDATE_FREQ}  \
+    --reprob ${REPROB} \
+    --warmup_epochs ${W_EPOCHS} \
+    --epochs ${EPOCHS}  \
+    --layer_decay ${LAYER_DECAY} \
+    --min_lr ${MIN_LR} \
+    --warmup_lr ${WARMUP_LR} \
+    --drop_path ${DROP_PATH}  \
+    --mixup ${MIXUP} \
+    --cutmix ${CUTMIX} \
+    --smoothing ${SMOOTHING} \
     --imagenet_default_mean_and_std   \
     --dist_eval \
     --model_ema \
@@ -203,36 +203,36 @@ NODE_RANK=your_node_rank
 MASTER_ADDR=your_master_addr
 
 python -m torch.distributed.launch \
-    --nproc_per_node {GPUS} \
-    --nnodes={NNODES} \
-    --node_rank={NODE_RANK} \
-    --master_addr={MASTER_ADDR} \
+    --nproc_per_node ${GPUS} \
+    --nnodes=${NNODES} \
+    --node_rank=${NODE_RANK} \
+    --master_addr=${MASTER_ADDR} \
     --master_port=6666 \
     run_class_finetuning.py  \
     --data_path /PATH/TO/IN1K/train \
     --eval_data_path /PATH/TO/IN1K/val \
-    --nb_classes {CLASSES} \
+    --nb_classes ${CLASSES} \
     --data_set image_folder \
     --output_dir ./output \
-    --input_size {INPUT_SIZE} \
+    --input_size ${INPUT_SIZE} \
     --log_dir ./output \
-    --model {MODEL} \
-    --weight_decay {WEIGHT_DECAY}  \
-    --finetune {WEIGHT}  \
-    --batch_size {BATCH_SIZE}  \
-    --layer_scale_init_value {LAYER_SCALE_INIT_VALUE} \
-    --lr {LR} \
-    --update_freq {UPDATE_FREQ}  \
-    --reprob {REPROB} \
-    --warmup_epochs {W_EPOCHS} \
-    --epochs {EPOCHS}  \
-    --layer_decay {LAYER_DECAY} \
-    --min_lr {MIN_LR} \
-    --warmup_lr {WARMUP_LR} \
-    --drop_path {DROP_PATH}  \
-    --mixup {MIXUP} \
-    --cutmix {CUTMIX} \
-    --smoothing {SMOOTHING} \
+    --model ${MODEL} \
+    --weight_decay ${WEIGHT_DECAY}  \
+    --finetune ${WEIGHT}  \
+    --batch_size ${BATCH_SIZE}  \
+    --layer_scale_init_value ${LAYER_SCALE_INIT_VALUE} \
+    --lr ${LR} \
+    --update_freq ${UPDATE_FREQ}  \
+    --reprob ${REPROB} \
+    --warmup_epochs ${W_EPOCHS} \
+    --epochs ${EPOCHS}  \
+    --layer_decay ${LAYER_DECAY} \
+    --min_lr ${MIN_LR} \
+    --warmup_lr ${WARMUP_LR} \
+    --drop_path ${DROP_PATH}  \
+    --mixup ${MIXUP} \
+    --cutmix ${CUTMIX} \
+    --smoothing ${SMOOTHING} \
     --imagenet_default_mean_and_std   \
     --dist_eval \
     --model_ema \
@@ -273,36 +273,36 @@ NODE_RANK=your_node_rank
 MASTER_ADDR=your_master_addr
 
 python -m torch.distributed.launch \
-    --nproc_per_node {GPUS} \
-    --nnodes={NNODES} \
-    --node_rank={NODE_RANK} \
-    --master_addr={MASTER_ADDR} \
+    --nproc_per_node ${GPUS} \
+    --nnodes=${NNODES} \
+    --node_rank=${NODE_RANK} \
+    --master_addr=${MASTER_ADDR} \
     --master_port=6666 \
     run_class_finetuning.py  \
     --data_path /PATH/TO/IN1K/train \
     --eval_data_path /PATH/TO/IN1K/val \
-    --nb_classes {CLASSES} \
+    --nb_classes ${CLASSES} \
     --data_set image_folder \
     --output_dir ./output \
-    --input_size {INPUT_SIZE} \
+    --input_size ${INPUT_SIZE} \
     --log_dir ./output \
-    --model {MODEL} \
-    --weight_decay {WEIGHT_DECAY}  \
-    --finetune {WEIGHT}  \
-    --batch_size {BATCH_SIZE}  \
-    --layer_scale_init_value {LAYER_SCALE_INIT_VALUE} \
-    --lr {LR} \
-    --update_freq {UPDATE_FREQ}  \
-    --reprob {REPROB} \
-    --warmup_epochs {W_EPOCHS} \
-    --epochs {EPOCHS}  \
-    --layer_decay {LAYER_DECAY} \
-    --min_lr {MIN_LR} \
-    --warmup_lr {WARMUP_LR} \
-    --drop_path {DROP_PATH}  \
-    --mixup {MIXUP} \
-    --cutmix {CUTMIX} \
-    --smoothing {SMOOTHING} \
+    --model ${MODEL} \
+    --weight_decay ${WEIGHT_DECAY}  \
+    --finetune ${WEIGHT}  \
+    --batch_size ${BATCH_SIZE}  \
+    --layer_scale_init_value ${LAYER_SCALE_INIT_VALUE} \
+    --lr ${LR} \
+    --update_freq ${UPDATE_FREQ}  \
+    --reprob ${REPROB} \
+    --warmup_epochs ${W_EPOCHS} \
+    --epochs ${EPOCHS}  \
+    --layer_decay ${LAYER_DECAY} \
+    --min_lr ${MIN_LR} \
+    --warmup_lr ${WARMUP_LR} \
+    --drop_path ${DROP_PATH}  \
+    --mixup ${MIXUP} \
+    --cutmix ${CUTMIX} \
+    --smoothing ${SMOOTHING} \
     --imagenet_default_mean_and_std   \
     --dist_eval \
     --model_ema \
