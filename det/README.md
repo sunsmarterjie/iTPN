@@ -52,7 +52,7 @@ python -m torch.distributed.launch --nproc_per_node=8 \
     --no-validate \
     --deterministic \
     --cfg-options model.backbone.use_checkpoint=True \
-    model.init_cfg['checkpoint']=$PRETRAINED \
+    model.init_cfg.checkpoint=$PRETRAINED \
 ```
 
 - To evaluate Mask R-CNN:
