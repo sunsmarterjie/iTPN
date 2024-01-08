@@ -38,6 +38,7 @@ Table 2: Fast_iTPN_base/large top-1 classification accuracy on ImageNet-1K.
 
 
 ## Fast_iTPN Fine-Tuning on ImageNet-1K: 
+(Without acceleration)
 
 <details>
  <summary> Fine-tune <b>Fast_iTPN_tiny</b>:</summary>
