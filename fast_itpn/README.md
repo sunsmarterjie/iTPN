@@ -1,5 +1,5 @@
 
-A stronger vision model: [Fast-iTPN](https://arxiv.org/pdf/2211.12735.pdf).
+A Stronger Visual Representation Model: [Fast-iTPN](https://arxiv.org/pdf/2211.12735.pdf).
 
 
 ## Download the pre-trained models below:
