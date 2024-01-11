@@ -23,7 +23,7 @@ blocks indicate that the network weights are pre-trained and un-trained (i.e., r
 
 ***08/Jan./2024***
 
-The preprint version of Fast-iTPN is public at [arxiv](https://arxiv.org/pdf/2211.12735.pdf).
+Fast-iTPN is public at [arxiv](https://arxiv.org/pdf/2211.12735.pdf). Fast-iTPN is a more powerful version of iTPN.
 
 ***26/Dec./2023***
 
