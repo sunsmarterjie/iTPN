@@ -272,7 +272,7 @@ MIXUP=0.8
 CUTMIX=1.0
 SMOOTHING=0.1
 MODEL='fast_itpn_large_2240_patch16_256'
-WEIGHT='../fast_itpn_base_1600e_1k.pt'  
+WEIGHT='../fast_itpn_large_1600e_1k.pt'  
 NODE_RANK=your_node_rank
 MASTER_ADDR=your_master_addr
 
