@@ -81,7 +81,7 @@ Get checkpoints (password: abcd):
 | |iTPN-B-pixel | iTPN-B-CLIP | iTPN-L-pixel | iTPN-L-CLIP/16|
 | :---: | :---: |:---: |:---: |:---: |
 |  baidu drive |[download](https://pan.baidu.com/s/1DjT2qtwGX5Kg1sU5kKlfEw)|[download](https://pan.baidu.com/s/1__LnTBBYzpvVEmGZFt7nFw)|[download](https://pan.baidu.com/s/1zy__QWtAhRyUHqKlTjKBGw)|[download](https://pan.baidu.com/s/1Gu-I3Z-25GFsfB31MQ_xZg)|
-| google drive  |[download](https://drive.google.com/file/d/1TYCaepVflm0xMrQefG5Sj4ityXYbJLFt/view?usp=share_link)|[download](https://drive.google.com/file/d/1H51Zusrvlj8RjcWA7yuUyeqaVhmndSeN/view?usp=share_link)|[download](https://drive.google.com/file/d/1TYCaepVflm0xMrQefG5Sj4ityXYbJLFt/view?usp=share_link)|[download](https://drive.google.com/file/d/1gyyjcdMvAQsz2xC7ei-rEd7G4po2spy4/view?usp=share_link)|
+| google drive  |[download](https://drive.google.com/file/d/1HxW37BOEhIE9UNgHq0zblK0fTy2-IyzM/view?usp=sharing)|[download](https://drive.google.com/file/d/1H51Zusrvlj8RjcWA7yuUyeqaVhmndSeN/view?usp=share_link)|[download](https://drive.google.com/file/d/1TYCaepVflm0xMrQefG5Sj4ityXYbJLFt/view?usp=share_link)|[download](https://drive.google.com/file/d/1gyyjcdMvAQsz2xC7ei-rEd7G4po2spy4/view?usp=share_link)|
 
 
 ***25/Nov./2022***
