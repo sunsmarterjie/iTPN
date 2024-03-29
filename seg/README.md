@@ -16,10 +16,7 @@ pip install mmcv-full==1.3.0 mmsegmentation==0.11.0
 pip install scipy timm==0.3.2
 
 # install apex
-# you can download apex using "git clone https://github.com/NVIDIA/apex" or get my apex from:
-# baidu disk at https://pan.baidu.com/s/1HoxIVfYLv0SrJ02iu_qTNA?pwd=apex password:apex
-# or google drive at https://drive.google.com/file/d/16HDPDWg81LIP-3Q5MBy3XC7afjhA7dU6/view?usp=sharing
-# put the "apex" folder in the current directory
+git clone https://github.com/NVIDIA/apex
 cd apex
 pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation --global-option="--cpp_ext" --global-option="--cuda_ext" ./
 cd ..
