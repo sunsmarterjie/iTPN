@@ -12,7 +12,7 @@ from mmseg.datasets import build_dataloader, build_dataset
 from mmseg.models import build_segmentor
 
 from backbone import beit
-
+from backbone import iTPN
 
 def parse_args():
     parser = argparse.ArgumentParser(
