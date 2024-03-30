@@ -19,8 +19,6 @@ from mmseg.utils import collect_env, get_root_logger
 
 from backbone import beit
 from backbone import iTPN
-from backbone import iTPN_WoNeck
-from backbone import iTPN_PlainOuts
 
 
 def parse_args():
