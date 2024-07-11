@@ -1,8 +1,8 @@
 
 <div align="center">
 
-## [CVPR2023/TPAMI2024]
 ## [Integrally Pre-Trained Transformer Pyramid Networks](https://openaccess.thecvf.com/content/CVPR2023/html/Tian_Integrally_Pre-Trained_Transformer_Pyramid_Networks_CVPR_2023_paper.html)
+## [CVPR2023/TPAMI2024]
 
 ### (A Simple Hierarchical Vision Transformer Meets Masked Image Modeling)
   
