@@ -21,6 +21,10 @@ blocks indicate that the network weights are pre-trained and un-trained (i.e., r
 
 ## Updates
 
+***11/Jul./2024***
+
+Fast-iTPN is accepted by TPAMI2024.
+
 ***08/Jan./2024***
 
 Fast-iTPN is public at [arxiv](https://arxiv.org/pdf/2211.12735.pdf). Fast-iTPN is a more powerful version of iTPN.
