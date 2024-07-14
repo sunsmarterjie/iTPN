@@ -652,7 +652,7 @@ class DecoupledRelativePositionBias(nn.Module):
 class Fast_iTPN(nn.Module):
     def __init__(self, img_size=224, patch_size=16, in_chans=3, embed_dim=512, depth_stage1=3, depth_stage2=3, depth=24,
                  num_heads=8, bridge_mlp_ratio=3., mlp_ratio=4., qkv_bias=True, qk_scale=None, drop_rate=0.,
-                 attn_drop_rate=0., drop_path_rate=0.0, init_values=None, attn_head_dim=None, norm_layer=nn.LayerNorm,
+                 attn_drop_rate=0., drop_path_rate=0.0, init_values=0.1, attn_head_dim=None, norm_layer=nn.LayerNorm,
                  patch_norm=False, num_classes=1000, use_mean_pooling=False,
                  init_scale=0.01,
                  cls_token=False,
