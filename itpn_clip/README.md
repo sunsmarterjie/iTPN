@@ -133,7 +133,7 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NO
     --nb_classes 1000 \
     --output_dir  ../path_to_save  \
     --model itpn_base_3324_patch16_224 \
-    --blr 5.0e-4 \
+    --lr 5.0e-4 \
     --finetune ../path_to_checkpoint \
     --drop_path 0.1 \
     --epochs 100 \
@@ -161,7 +161,7 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NO
     --nb_classes 1000 \
     --output_dir  ../path_to_save  \
     --model itpn_large_2240_patch16_224 \
-    --blr 2.0e-4 \
+    --lr 2.0e-4 \
     --finetune ../path_to_checkpoint \
     --drop_path 0.25 \
     --epochs 50 \
@@ -188,7 +188,7 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NO
     --nb_classes 1000 \
     --output_dir  ../path_to_save  \
     --model itpn_large_2240_patch16_256 \
-    --blr 2.0e-4 \
+    --lr 2.0e-4 \
     --finetune ../path_to_checkpoint \
     --drop_path 0.25 \
     --epochs 50 \
@@ -202,8 +202,4 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NO
 ```
 </details>
 
-
-## iTPN Intermediate Fine-Tuning on ImageNet-21K: 
-
-come soon ...
 
