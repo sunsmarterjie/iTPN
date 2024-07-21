@@ -13,8 +13,8 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NO
     --world_size 8 \
     --batch_size 32 \
     --model clip_tpn_base_3324_patch16_224 \
-    --beta 0.98 \
-    --blr 1.5e-3 \
+    --opt_betas 0.98 \
+    --lr 1.5e-3 \
     --clip_path ../ViT-B-16.pt \
     --drop_path 0.1 \
     --epochs 300 \
@@ -37,8 +37,8 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NO
     --world_size 8 \
     --batch_size 32 \
     --model clip_tpn_base_3324_patch16_224 \
-    --beta 0.98 \
-    --blr 1.5e-3 \
+    --opt_betas 0.98 \
+    --lr 1.5e-3 \
     --clip_path ../ViT-L-14.pt \
     --drop_path 0.1 \
     --epochs 300 \
@@ -61,8 +61,8 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NO
     --world_size 8 \
     --batch_size 32 \
     --model clip_tpn_large_2240_patch16_224 \
-    --beta 0.98 \
-    --blr 1.5e-3 \
+    --opt_betas 0.98 \
+    --lr 1.5e-3 \
     --clip_path ../ViT-B-16.pt \
     --drop_path 0.2 \
     --epochs 300 \
@@ -83,8 +83,8 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NO
     --world_size 8 \
     --batch_size 32 \
     --model clip_tpn_large_2240_patch16_224 \
-    --beta 0.98 \
-    --blr 1.5e-3 \
+    --opt_betas 0.98 \
+    --lr 1.5e-3 \
     --clip_path ../ViT-L-14.pt \
     --drop_path 0.2 \
     --epochs 300 \
@@ -106,8 +106,8 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 8 --node_rank=$NO
     --world_size 8 \
     --batch_size 32 \
     --model clip_tpn_large_2240_patch16_256 \
-    --beta 0.98 \
-    --blr 1.5e-3 \
+    --opt_betas 0.98 \
+    --lr 1.5e-3 \
     --clip_path ../ViT-L-14.pt \
     --drop_path 0.2 \
     --epochs 300 \
