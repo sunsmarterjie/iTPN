@@ -148,6 +148,16 @@ iTPN is released under the [License](https://github.com/sunsmarterjie/iTPN/blob/
 ## Citation
 
 ```bash
+@article{tian2024fast,
+  title={Fast-iTPN: Integrally pre-trained transformer pyramid network with token migration},
+  author={Tian, Yunjie and Xie, Lingxi and Qiu, Jihao and Jiao, Jianbin and Wang, Yaowei and Tian, Qi and Ye, Qixiang},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2024},
+  publisher={IEEE}
+}
+```
+
+```bash
 @inproceedings{tian2023integrally,
   title={Integrally pre-trained transformer pyramid networks},
   author={Tian, Yunjie and Xie, Lingxi and Wang, Zhaozhi and Wei, Longhui and Zhang, Xiaopeng and Jiao, Jianbin and Wang, Yaowei and Tian, Qi and Ye, Qixiang},
